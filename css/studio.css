@@ -1,0 +1,371 @@
+/* Studio page (equivalente ao studio.html atual, mas em CSS reutilizável) */
+
+.studio-hero {
+  width: 100%;
+  height: 684px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studio-hero-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.studio-hero h1 {
+  color: #f8f7f2;
+  font-size: 55px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.studio-hero-mobile-stack {
+  display: none;
+}
+
+.studio-intro {
+  padding: 140px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-wrap {
+  max-width: 643px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+}
+
+.intro-wrap strong {
+  font-size: inherit;
+  font-weight: 600;
+  display: block;
+  margin: 30px 0;
+  letter-spacing: 0.88px;
+  line-height: 1.2;
+}
+
+.editorial-section {
+  padding-bottom: 120px;
+}
+
+.studio-divider-line {
+  width: 100%;
+  height: 1px;
+  background: #2d2926;
+  opacity: 0.2;
+  margin-bottom: 120px;
+}
+
+.grid-row {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.label-col {
+  width: 659px;
+  font-family: "Darker Grotesque";
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.88px;
+}
+
+.content-col {
+  width: 620px;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+}
+
+.image-break {
+  width: 100%;
+  height: 872px;
+  position: relative;
+}
+
+.image-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay-text {
+  position: absolute;
+  top: 550px;
+  width: 308px;
+  color: #f8f7f2;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+}
+
+.image-break-inner {
+  position: absolute;
+  inset: 0;
+}
+
+.dark-content {
+  background: #2d2926;
+  color: #f8f7f2;
+  padding: 140px 0;
+}
+
+.service-row {
+  display: flex;
+  padding-bottom: 150px;
+  margin-bottom: 150px;
+  border-bottom: 1px solid rgba(248, 247, 242, 0.2);
+}
+
+.service-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.service-title-col {
+  width: 659px;
+}
+
+.service-accordion-trigger {
+  width: 659px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-accordion-trigger:focus-visible {
+  outline: 2px solid rgba(136, 135, 137, 0.8);
+  outline-offset: 6px;
+  border-radius: 10px;
+}
+
+.service-accordion-trigger .service-title-col {
+  width: 100%;
+}
+
+.accordion-toggle-plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 48px;
+  font-weight: 400;
+  opacity: 0.5;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.service-row.open .accordion-toggle-plus {
+  opacity: 0.7;
+  transform: rotate(45deg);
+}
+
+.service-title-col h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.service-title-col p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.service-desc-col {
+  width: 577px;
+  /* Descrição e bullets ficam visíveis; o acordeon é nos bullets. */
+}
+
+.service-desc-col.open {
+  max-height: 1200px; /* garante animação mesmo com respostas maiores */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.service-desc-col p {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 48px;
+  opacity: 0.9;
+}
+
+.service-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Darker Grotesque";
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.88px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-list-item:hover {
+  color: #888789;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 48px;
+  font-weight: 400;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-list-item.open .plus {
+  opacity: 0.7;
+  transform: rotate(45deg);
+}
+
+.service-accordion-item {
+  margin-bottom: 40px;
+}
+
+.service-accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.service-accordion-item span {
+  color: rgba(248, 247, 242, 0.9);
+}
+
+.service-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: max-height 0.45s ease, opacity 0.25s ease, transform 0.25s ease;
+  margin-top: 14px;
+  color: rgba(248, 247, 242, 0.9);
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: 0.72px;
+}
+
+.service-answer.open {
+  max-height: 240px; /* ajusta responsivamente pelo conteúdo */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Studio contact block (mesma classe do home) */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  background: #f8f7f2;
+  opacity: 0.2;
+}
+
+.contact-text {
+  width: 650px;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+@media (max-width: 900px) {
+  .grid-row {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .label-col {
+    width: 100%;
+  }
+
+  .content-col {
+    width: 100%;
+  }
+
+  .service-row {
+    flex-direction: column;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+
+  .service-accordion-trigger {
+    width: 100%;
+  }
+
+  .service-title-col {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .service-desc-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .studio-hero {
+    height: 520px;
+    padding: 0;
+    display: flex;
+    overflow-x: clip;
+  }
+
+  .studio-hero-inner {
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .studio-hero-mobile-stack {
+    display: none !important;
+  }
+
+  .studio-hero h1 {
+    font-size: 35px;
+    line-height: 1.05;
+    letter-spacing: 0.06em;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .studio-intro {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .image-break {
+    height: 585px;
+  }
+
+  .image-overlay-text {
+    top: 290px;
+  }
+}
+

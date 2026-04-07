@@ -1,0 +1,190 @@
+/* Dashboard UI (admin) */
+
+.dashboard-shell {
+  min-height: 100vh;
+  background: #f8f7f2;
+  color: #2d2926;
+  font-family: "Figtree", sans-serif;
+}
+
+.dashboard-topbar {
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  background: rgba(248, 247, 242, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(45, 41, 38, 0.08);
+  z-index: 10;
+}
+
+.dashboard-topbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-brand {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dashboard-logout-form {
+  margin: 0;
+}
+
+.dashboard-logout-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.dashboard-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.dashboard-title {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.dashboard-card {
+  background: #fff;
+  border: 1px solid rgba(45, 41, 38, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.dashboard-card-cover {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: rgba(45, 41, 38, 0.05);
+}
+
+.dashboard-card-key {
+  margin-top: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  opacity: 0.8;
+  word-break: break-word;
+}
+
+.dashboard-card-actions {
+  margin-top: 14px;
+}
+
+.dashboard-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #2d2926;
+  color: #f8f7f2;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dashboard-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(45, 41, 38, 0.18);
+  color: #2d2926;
+}
+
+.dashboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(45, 41, 38, 0.08);
+}
+
+.dashboard-img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: rgba(45, 41, 38, 0.05);
+}
+
+.dashboard-img-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-img-name {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  opacity: 0.85;
+  word-break: break-word;
+}
+
+.dashboard-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.dashboard-small-btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.dashboard-small-btn.danger {
+  background: #b3261e;
+  color: #fff;
+}
+
+.dashboard-small-btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(45, 41, 38, 0.2);
+  color: #2d2926;
+}
+
+.dashboard-form-row {
+  margin: 18px 0 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dashboard-input {
+  flex: 1;
+  min-width: 260px;
+}
+
+.dashboard-input input {
+  width: 100%;
+}
+

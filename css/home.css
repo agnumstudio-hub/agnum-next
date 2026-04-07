@@ -1,0 +1,511 @@
+/* Home page (equivalente ao index.html atual, mas em CSS reutilizável) */
+
+.hero-section {
+  padding: 160px 0;
+}
+
+.hero-section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+}
+
+.hero-title {
+  width: 170px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero-title-desktop {
+  display: inline;
+}
+
+.hero-title-mobile {
+  display: none;
+}
+
+.hero-main-img {
+  width: 676px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero-text {
+  width: 175px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+
+.posicionamento {
+  background: #2d2926;
+  color: #f8f7f2;
+  padding: 80px 0;
+}
+
+.posicionamento-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 620px;
+  gap: 64px;
+}
+
+.pos-label {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+
+.pos-text {
+  width: 491px;
+  font-size: 18px;
+  line-height: 21.6px;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.perspective-section {
+  padding: 120px 0;
+}
+
+.perspective-section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.p-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.p-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.p-grid img {
+  width: 100%;
+  height: 408px;
+  object-fit: cover;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  will-change: transform;
+}
+
+.p-grid img.visible {
+  opacity: 1;
+  transform: scale(1.01) translateY(0);
+}
+
+/* Hover com “zoom” extra nos itens da perspectiva */
+.p-grid img.visible:hover {
+  transform: scale(1.03) translateY(0);
+}
+
+.underline {
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2d2926;
+  transition: color 0.3s ease;
+}
+
+.underline:hover {
+  color: #888789;
+}
+
+.underline-dark {
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #bababa;
+  transition: color 0.3s ease;
+}
+
+.underline-dark:hover {
+  color: #888789;
+}
+
+
+.manifesto-section {
+  height: 1069px;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto-bg-image {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  width: 100%;
+  height: calc(100% + 160px);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.manifesto-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(179deg, rgba(31, 28, 26, 0) 0%, #1f1c1a 100%);
+  z-index: 1;
+}
+
+.manifesto-section-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.manifesto-text {
+  width: 458px;
+  color: #f8f7f2;
+}
+
+/* Texto sticky apenas dentro da seção do manifesto */
+@media (min-width: 769px) {
+  .manifesto-section .manifesto-text {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.manifesto-text h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  /* semibold */
+}
+
+.experience-section .manifesto-text h2 {
+  font-weight: 500;
+  /* garante semibold mesmo com regras globais */
+}
+
+.manifesto-text p {
+  font-size: 22px;
+  line-height: 26.4px;
+}
+
+.about-section {
+  padding: 120px 0;
+}
+
+.about-section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about-content {
+  width: 764px;
+  display: flex;
+  flex-direction: column;
+  gap: 425px;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.about-header h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.about-header p {
+  width: 640px;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.about-img {
+  width: 408px;
+  height: 610px;
+  object-fit: cover;
+}
+
+.contact-section {
+  background: #2d2926;
+  padding: 122px 0;
+  margin-bottom: -1px;
+}
+
+.contact-section-inner {
+  color: #f8f7f2;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.contact-text {
+  width: 650px;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    padding: 120px 0 90px;
+  }
+
+  .hero-section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    min-width: 0;
+  }
+
+  .hero-main-img {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    display: block;
+  }
+
+  .hero-title,
+  .hero-text {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .about-section-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  /* Coluna empilhada: texto → imagem → link (como no desktop) */
+  .about-content {
+    display: contents;
+  }
+
+  .about-section-inner .about-header {
+    order: 1;
+    width: 100%;
+  }
+
+  .about-section-inner .about-img {
+    order: 2;
+  }
+
+  .about-section-inner a.underline {
+    order: 3;
+  }
+
+  .about-header p {
+    width: 100%;
+    height: auto;
+  }
+
+  .p-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-grid img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 110px 0 72px;
+    overflow-x: clip;
+  }
+
+  .hero-section-inner {
+    align-items: center;
+    gap: 36px;
+    min-width: 0;
+  }
+
+  .hero-title {
+    font-size: 35px;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  .hero-title-desktop {
+    display: none;
+  }
+
+  .hero-title-mobile {
+    display: inline;
+  }
+
+  .hero-main-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 320px;
+    font-size: 16px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  .posicionamento {
+    padding: 72px 0;
+  }
+
+  .posicionamento-inner {
+    min-height: auto;
+    gap: 130px;
+    padding: 0 8px;
+  }
+
+  .pos-label {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .pos-text {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .about-section {
+    padding: 100px 0;
+  }
+
+  .about-section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+  }
+
+  .about-header {
+    gap: 24px;
+  }
+
+  .about-header h2 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .about-header p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .about-content .underline {
+    font-size: 16px;
+  }
+
+  .about-img {
+    width: min(100%, 320px);
+    max-width: calc(100vw - 48px);
+    height: 420px;
+    margin: 0;
+    display: block;
+    object-fit: cover;
+    align-self: flex-end;
+  }
+
+  .contact-section {
+    padding: 90px 0;
+  }
+
+  .contact-section .contact-section-inner {
+    min-width: 0;
+  }
+
+  .contact-section .contact-text {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-section-inner .underline-dark {
+    font-size: 16px;
+  }
+
+  .manifesto-section {
+    height: auto;
+    min-height: 680px;
+    padding: 305px 0 60px;
+  }
+
+  .manifesto-bg-image {
+    top: 0;
+    height: 100%;
+    object-position: left center;
+    transform: none !important;
+  }
+
+  .manifesto-section-inner {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .manifesto-section .manifesto-text {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 320px;
+    text-align: right;
+  }
+
+  .manifesto-section .manifesto-text h2 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .manifesto-section .manifesto-text p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

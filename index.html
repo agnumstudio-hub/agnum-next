@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGNUM | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Darker+Grotesque:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #F8F7F2; 
+            width: 100%; 
+            overflow-x: hidden; 
+            font-family: 'Figtree', sans-serif;
+        }
+
+        /* HEADER (Baseado no StyledHeader2) */
+        .header-container {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            background: #F8F7F2;
+        }
+        .logo-box { width: 35px; height: 35px; background: #2D2926; border-radius: 0.28px; } /* Representando o Vector */
+        .logo-img { width: 40px; height: auto; } /* Seu favicon.png */
+        .menu-links { margin-left: auto; display: flex; gap: 116px; align-items: center; }
+        .menu-links a { 
+            text-decoration: none; color: #000; font-family: 'Darker Grotesque'; 
+            font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px;
+        }
+
+        /* HERO (Baseado no StyledHero) */
+        .hero-section {
+            padding: 160px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 110px;
+        }
+        .hero-title { width: 170px; font-size: 25px; font-weight: 500; text-transform: uppercase; }
+        .hero-main-img { width: 676px; height: 500px; object-fit: cover; }
+        .hero-text { width: 175px; font-size: 15px; line-height: 18px; letter-spacing: 0.6px; }
+
+        /* OUR POSITION (StyledPosicionamento) */
+        .posicionamento {
+            background: #2D2926;
+            color: #F8F7F2;
+            padding: 80px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 733px;
+        }
+        .pos-label { font-family: 'Darker Grotesque'; font-size: 20px; letter-spacing: 0.8px; }
+        .pos-text { width: 491px; font-size: 18px; line-height: 21.6px; }
+
+        /* PERSPECTIVE (StyledPerspective) */
+        .perspective-section {
+            padding: 120px 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+        }
+        .p-title { font-size: 35px; text-transform: uppercase; letter-spacing: 1.4px; }
+        .p-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .p-grid img { width: 100%; height: 408px; object-fit: cover; }
+
+        /* MANIFESTO (StyledManifesto) */
+        .manifesto-section {
+            height: 1069px;
+            padding: 120px 100px;
+            background: linear-gradient(179deg, rgba(31, 28, 26, 0) 0%, #1F1C1A 100%), url('images/HOME6.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .manifesto-text { width: 458px; color: #F8F7F2; }
+        .manifesto-text h2 { font-size: 35px; text-transform: uppercase; line-height: 42px; margin-bottom: 24px; }
+        .manifesto-text p { font-size: 22px; line-height: 26.4px; }
+
+        /* ABOUT / STUDIO (StyledAbout) */
+        .about-section {
+            padding: 120px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .about-content { width: 764px; display: flex; flex-direction: column; gap: 425px; }
+        .about-header { display: flex; flex-direction: column; gap: 37px; }
+        .about-header h2 { font-size: 35px; text-transform: uppercase; }
+        .about-header p { width: 640px; font-size: 18px; line-height: 21.6px; }
+        .about-img { width: 408px; height: 610px; object-fit: cover; }
+
+        /* CONTACT (StyledContact01) */
+        .contact-section {
+            background: #2D2926;
+            padding: 122px 80px;
+            color: #F8F7F2;
+            display: flex;
+            flex-direction: column;
+            gap: 55px;
+        }
+        .contact-text { width: 650px; font-size: 18px; line-height: 21.6px; }
+
+        /* FOOTER (StyledFooter) */
+        .footer-section {
+            background: #2D2926;
+            padding: 31px 80px 131px;
+            color: #F8F7F2;
+        }
+        .footer-line { width: 100%; height: 1px; background: #F8F7F2; margin-bottom: 23px; }
+        .footer-bottom { display: flex; justify-content: space-between; font-family: 'Darker Grotesque'; font-size: 20px; }
+        .footer-socials { width: 630px; display: flex; justify-content: space-between; }
+        .footer-socials a { color: #F8F7F2; text-decoration: none; }
+
+        .underline { text-decoration: underline; text-transform: uppercase; cursor: pointer; font-family: 'Darker Grotesque'; font-weight: 600; font-size: 20px; }
+
+        /* AJUSTES PARA TELAS MENORES */
+        @media (max-width: 1200px) {
+            .hero-section, .about-section { flex-direction: column; align-items: center; gap: 50px; padding: 80px 20px; }
+            .hero-main-img, .about-content, .about-header p { width: 100%; height: auto; }
+            .p-grid { grid-template-columns: 1fr 1fr; }
+            .header-container { padding: 0 20px; }
+            .menu-links { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <img src="images/favicon.png" alt="Logo" class="logo-img">
+        <nav class="menu-links">
+            <a href="#">the Studio</a>
+            <a href="#">portfolio</a>
+            <a href="#">Contact</a>
+            <a href="#">EN</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-title">presence is designed.</div>
+            <img src="images/HOME1.jpg" class="hero-main-img" alt="Hero">
+            <div class="hero-text">A creative studio shaping presence for hospitality, experiences and high-end brands.</div>
+        </section>
+
+        <section class="posicionamento">
+            <div class="pos-label">OUR POSITION</div>
+            <div class="pos-text">
+                AGNUM translates quality into presence, with clarity, restraint, and long-term intention.<br/><br/>
+                We bridge the gap between aesthetic intelligence and commercial performance, ensuring that refined<br/> perception drives measurable value.
+            </div>
+            <div class="pos-label">AGNUM CREATIVE STUDIO 26</div>
+        </section>
+
+        <section class="perspective-section">
+            <div>
+                <div class="p-title">perspective</div>
+                <p style="font-size: 18px; margin-top: 36px;">A curated selection of visual and strategic directions.</p>
+            </div>
+            <div class="p-grid">
+                <img src="images/HOME2.jpg" alt="Work 1">
+                <img src="images/HOME3.jpg" alt="Work 2">
+                <img src="images/HOME4.jpg" alt="Work 3">
+                <img src="images/HOME5.jpg" alt="Work 4">
+            </div>
+            <div class="underline">explore our portfolio</div>
+        </section>
+
+        <section class="manifesto-section">
+            <div class="manifesto-text">
+                <h2>Experience is felt before it is explained.</h2>
+                <p>We believe presence is not accidental.<br/>It is built through observation, intention<br/> and restraint.<br/>Strategic direction is what allows that<br/> feeling to become a lasting asset.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>the studio</h2>
+                    <p>Our work moves across direction, aesthetics, and strategic marketing.<br/><br/>We support hospitality brands through a dual approach: building an uncompromising visual narrative and ensuring it reaches the right<br/> audience through high-performance distribution.<br/><br/>We translate perception into revenue.</p>
+                </div>
+                <div class="underline">the studio</div>
+            </div>
+            <img src="images/HOME7.jpg" class="about-img" alt="Studio">
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-text">
+                We work with a limited number of partners each year.<br/><br/>
+                If you are shaping an experience, a place or a brand and seek direction with clarity and intention, we would be pleased to begin a conversation.
+            </div>
+            <div class="underline">contact the studio</div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+            <div>© AGNUM CREATIVE STUDIO</div>
+            <div class="footer-socials">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">PINTEREST</a>
+                <a href="#">X</a>
+                <a href="#">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
