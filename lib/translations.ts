@@ -245,9 +245,9 @@ const pt: TranslationBundle = {
         ],
       },
       {
-        title: "Arquitetura de Performance \n& Distribuição Estratégica,
+        title: "Arquitetura de Performance \n& Distribuição Estratégica",
         subtitle: "Onde a percepção se converte em receita.",
-        description:
+        description: 
           "Uma vez alinhadas a percepção e a narrativa, estruturamos os canais responsáveis por transformar interesse em reservas.\n\nNosso papel é garantir que a demanda gerada pela presença seja capturada com eficiência, por meio de uma distribuição qualificada e de ambientes de reserva preparados para conversão.",
         bullets: [
           "Metasearch & Distribuição Paga",
