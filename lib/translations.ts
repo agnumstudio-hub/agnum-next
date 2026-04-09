@@ -178,12 +178,12 @@ const pt: TranslationBundle = {
     heroTitle: "Presença se constrói.",
     heroText:
       "Um estúdio criativo que constrói presença para hotelaria, experiências e marcas de alto padrão.",
-    positionLabel: "posicionamento",
+    positionLabel: "POSICIONAMENTO",
     positionText:
       "A AGNUM traduz qualidade em presença, com clareza, contenção e visão de longo prazo.\n\nConectamos inteligência estética à lógica de negócio, garantindo que uma percepção refinada se converta em valor real.",
     positionFooterLabel: "AGNUM CREATIVE STUDIO 26",
     perspectiveTitle: "perspectiva",
-    perspectiveIntro: "UUma curadoria de direções visuais e estratégicas.",
+    perspectiveIntro: "Uma curadoria de direções visuais e estratégicas.",
     perspectiveUnderline: "explorar o portfolio",
     manifestoTitle: "Experiência é sentida antes de ser explicada.",
     manifestoText:
