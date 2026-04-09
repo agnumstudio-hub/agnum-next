@@ -263,7 +263,7 @@ const pt: TranslationBundle = {
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "A perspectiva é uma escolha.\nNosso portfólio é um estudo sobre como a intenção molda o desejo. A seguir, uma seleção de trabalhos orientados por ritmo, luz e alinhamento estratégico para hotelaria e marcas de alto padrão.\n\nPriorizamos a privacidade e a exclusividade de nossos parceiros; por isso, nossos projetos são apresentados como estudos de percepção, e não como simples registros de serviço.",
+      "A perspectiva é uma escolha.\nNosso portfólio é um estudo sobre como a intenção molda o desejo.\nA seguir, uma seleção de trabalhos orientados por ritmo, luz e alinhamento estratégico para hotelaria e marcas de alto padrão.\n\nPriorizamos a privacidade e a exclusividade de nossos parceiros;\nPor isso, nossos projetos são apresentados como estudos de percepção, e não como simples registros de serviço.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
