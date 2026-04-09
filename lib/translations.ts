@@ -1,7 +1,7 @@
 import React from "react";
 import type { ReactNode } from "react";
 
-export type Locale = "en" | "pt" | "es";
+export type Locale = "pt" | "en" | "es";
 
 export type TranslationBundle = {
   nav: { studio: string; portfolio: string; contact: string };
@@ -391,11 +391,11 @@ const es: TranslationBundle = {
   },
 };
 
-export const translations: Record<Locale, TranslationBundle> = { en, pt, es };
+export const translations: Record<Locale, TranslationBundle> = { pt, en, es };
 
 export function getT(locale?: string): TranslationBundle {
-  const l = (locale as Locale) ?? "en";
-  return translations[l] ?? translations.en;
+  const l = (locale as Locale) ?? "pt";
+  return translations[l] ?? translations.pt;
 }
 
 export function renderMultiline(text: string): ReactNode[] {
