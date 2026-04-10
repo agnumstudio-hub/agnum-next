@@ -12,7 +12,7 @@
 }
 
 .hero-title {
-  width: 195px;
+  width: 200px;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
@@ -33,9 +33,9 @@
 }
 
 .hero-text {
-  width: 190px;
+  width: 200px;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
   letter-spacing: 0.6px;
 }
 
@@ -177,7 +177,7 @@
 }
 
 .manifesto-text {
-  width: 458px;
+  width: 440px;
   color: #f8f7f2;
 }
 
@@ -495,7 +495,7 @@
     left: auto;
     transform: none;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     text-align: right;
   }
 
