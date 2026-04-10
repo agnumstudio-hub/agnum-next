@@ -208,7 +208,7 @@ const fr: TranslationBundle = {
     editorial: {
       observationLabel: "Observation",
       observationBody:
-        "Nous commençons par observer. L’espace, la lumière, le rythme, mais aussi le contexte de marché. Comprendre la position d’une propriété dans son environnement concurrentiel permet d’identifier les leviers : là où la perception peut être affinée, où le positionnement peut gagner en clarté, et où la demande peut être orientée avec précision.\nEn alignant désir du client et dynamique du marché, nous définissons la direction avant toute production.",
+        "Nous commençons par observer. L’espace, la lumière, le rythme, mais aussi le contexte de marché. Comprendre la position d’une propriété dans son environnement concurrentiel permet d’identifier les leviers: là où la perception peut être affinée, où le positionnement peut gagner en clarté, et où la demande peut être orientée avec précision.\nEn alignant désir du client et dynamique du marché, nous définissons la direction avant toute production.",
       intentionLabel: "intention",
       intentionBody:
         "Dans le haut de gamme, le hasard est un risque. Chaque décision est assumée. Du cadrage d’une image à la structuration des canaux de diffusion, direction créative et logique commerciale avancent ensemble. La narration visuelle n’est pas distincte de la performance. Elle en est le fondement.\nChaque point de contact guide la perception vers la confiance, puis la confiance vers la réservation directe.",
@@ -226,7 +226,7 @@ const fr: TranslationBundle = {
         title: "Stratégie de Perception\n& Brand Premium",
         subtitle: "Le fondement de la valeur.",
         description:
-          "Avant de produire des contenus visuels ou d’activer des campagnes, nous définissons l’autorité de positionnement de la propriété. Notre objectif est de renforcer le Brand Premium et de soutenir la capacité tarifaire dans un environnement concurrentiel.\n\nGrâce à un positionnement stratégique et une cohérence visuelle, la propriété cesse d’être perçue comme une option parmi d’autres et devient une référence au sein de sa destination.",
+          "Avant de produire des contenus visuels ou d’activer des campagnes, nous définissons l’autorité de positionnement de la propriété. Notre objectif est de renforcer le Brand Premium et de soutenir la capacité tarifaire dans un environnement concurrentiel.",
         bullets: [
           "Positionnement & Contexte de Marché",
           "Identité de Marque & Confiance Visuelle",
@@ -237,7 +237,7 @@ const fr: TranslationBundle = {
         title: "Intelligence Narrative\n& Construction du Désir",
         subtitle: "L’architecture du désir.",
         description:
-          "L’hôtellerie haut de gamme est d’abord vécue à travers la perception. Nos productions visuelles sont conçues pour transformer l’atmosphère en désir, guidant le client de la curiosité vers l’intention.\n\nGrâce à une direction éditoriale et une curation continue, la présence digitale devient une narration vivante, capable d’installer la confiance dans le temps.",
+          "L’hôtellerie haut de gamme est d’abord vécue à travers la perception. Nos productions visuelles sont conçues pour transformer l’atmosphère en désir, guidant le client de la curiosité vers l’intention.",
         bullets: [
           "Photographie Éditoriale & Motion",
           "Narration Sociale & Curation Digitale",
@@ -248,7 +248,7 @@ const fr: TranslationBundle = {
         title: "Architecture de Performance\n& Distribution Stratégique",
         subtitle: "Là où la perception devient revenu.",
         description:
-          "Une fois la perception et la narration alignées, nous structurons les canaux qui transforment l’intérêt en réservation.\n\nNotre rôle est de garantir que la demande générée par la présence soit captée avec précision, à travers une distribution maîtrisée et des environnements de réservation optimisés.",
+          "Une fois la perception et la narration alignées, nous structurons les canaux qui transforment l’intérêt en réservation.",
         bullets: [
           "Metasearch & Distribution Paid",
           "Écosystème de Réservation Directe",
@@ -263,7 +263,7 @@ const fr: TranslationBundle = {
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "La perspective est un choix.\nNotre portfolio est une étude de la manière dont l’intention façonne le désir. Vous trouverez ci-dessous une sélection de projets guidés par le rythme, la lumière et l’alignement stratégique pour l’hôtellerie et les marques haut de gamme.\n\nNous accordons une grande importance à la confidentialité et à l’exclusivité de nos partenaires ; nos projets sont donc présentés comme des études de perception plutôt que comme de simples réalisations.",
+      "La perspective est un choix. Notre portfolio est une étude de la manière dont l’intention façonne le désir.\nVous trouverez ci-dessous une sélection de projets guidés par le rythme, la lumière et l’alignement stratégique pour l’hôtellerie et les marques haut de gamme.\n\nNous accordons une grande importance à la confidentialité et à l’exclusivité de nos partenaires;\nNos projets sont donc présentés comme des études de perception plutôt que comme de simples réalisations.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
@@ -336,7 +336,7 @@ const it: TranslationBundle = {
         title: "Strategia di Percezione\n& Brand Premium",
         subtitle: "La base del valore.",
         description:
-          "Prima di produrre contenuti visivi o attivare canali, definiamo l’autorità di posizionamento della struttura. Il nostro obiettivo è rafforzare il Brand Premium e sostenere la capacità di pricing all’interno del contesto competitivo.\n\nAttraverso un posizionamento strategico e una coerenza visiva, la struttura non viene percepita come un’opzione tra molte, ma come un punto di riferimento nel proprio territorio.",
+          "Prima di produrre contenuti visivi o attivare canali, definiamo l’autorità di posizionamento della struttura. Il nostro obiettivo è rafforzare il Brand Premium e sostenere la capacità di pricing all’interno del contesto competitivo.",
         bullets: [
           "Posizionamento & Contesto di Mercato",
           "Identità di Marca & Fiducia Visiva",
@@ -347,7 +347,7 @@ const it: TranslationBundle = {
         title: "Intelligenza Narrative\n& Costruzione del Desiderio",
         subtitle: "L’architettura del desiderio.",
         description:
-          "L’ospitalità di alto livello viene vissuta prima attraverso la percezione. Le nostre produzioni visive traducono l’atmosfera in desiderio, accompagnando l’ospite dalla curiosità all’intenzione.\n\nAttraverso direzione editoriale e una curatela continua, la presenza digitale diventa una narrazione viva che costruisce fiducia nel tempo.",
+          "L’ospitalità di alto livello viene vissuta prima attraverso la percezione. Le nostre produzioni visive traducono l’atmosfera in desiderio, accompagnando l’ospite dalla curiosità all’intenzione.",
         bullets: [
           "Fotografia Editoriale & Motion",
           "Narrazione Social & Curatela Digitale",
@@ -358,7 +358,7 @@ const it: TranslationBundle = {
         title: "Architettura di Performance\n& Distribuzione Strategica",
         subtitle: "Dove la percezione diventa valore.",
         description:
-          "Una volta allineate percezione e narrazione, strutturiamo i canali che trasformano l’interesse in prenotazioni.\n\nIl nostro ruolo è garantire che la domanda generata dalla presenza venga intercettata con efficienza, attraverso una distribuzione precisa e ambienti di prenotazione performanti.",
+          "Una volta allineate percezione e narrazione, strutturiamo i canali che trasformano l’interesse in prenotazioni.",
         bullets: [
           "Metasearch & Distribuzione Paid",
           "Ecossistema di Prenotazione Diretta",
@@ -373,7 +373,7 @@ const it: TranslationBundle = {
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "La prospettiva è una scelta.\nIl nostro portfolio è uno studio su come l’intenzione costruisce il desiderio. Di seguito, una selezione di lavori guidati da ritmo, luce e allineamento strategico per l’ospitalità e i brand di alta gamma.\n\nAttribuiamo grande valore alla riservatezza e all’esclusività dei nostri partner; per questo motivo, i nostri progetti vengono presentati come studi di percezione e non come semplici esecuzioni.",
+      "La prospettiva è una scelta. Il nostro portfolio è uno studio su come l’intenzione costruisce il desiderio.\nDi seguito, una selezione di lavori guidati da ritmo, luce e allineamento strategico per l’ospitalità e i brand di alta gamma.\n\nAttribuiamo grande valore alla riservatezza e all’esclusività dei nostri partner;\nPer questo motivo, i nostri progetti vengono presentati come studi di percezione e non come semplici esecuzioni.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
@@ -446,7 +446,7 @@ const de: TranslationBundle = {
         title: "Wahrnehmungsstrategie\n& Brand Premium",
         subtitle: "Die Grundlage von Wert.",
         description:
-          "Bevor visuelle Inhalte entstehen oder Kanäle aktiviert werden, definieren wir die Positionierungsautorität der Immobilie. Unser Fokus liegt darauf, das Brand Premium zu stärken und die Preissetzung innerhalb des Wettbewerbsumfelds nachhaltig zu unterstützen.\n\nDurch strategische Positionierung und visuelle Kohärenz wird die Immobilie nicht als eine Option unter vielen wahrgenommen, sondern als Referenz innerhalb ihrer Destination.",
+          "Bevor visuelle Inhalte entstehen oder Kanäle aktiviert werden, definieren wir die Positionierungsautorität der Immobilie. Unser Fokus liegt darauf, das Brand Premium zu stärken und die Preissetzung innerhalb des Wettbewerbsumfelds nachhaltig zu unterstützen.",
         bullets: [
           "Positionierung & Marktumfeld",
           "Markenidentität & Visuelles Vertrauen",
@@ -457,7 +457,7 @@ const de: TranslationBundle = {
         title: "Narrative Intelligenz\n& Aspirative Erzählung",
         subtitle: "Die Architektur des Begehrens.",
         description:
-          "Hochwertige Hospitality wird zuerst über Wahrnehmung erlebt. Unsere visuellen Produktionen übersetzen Atmosphäre in Nachfrage und führen den Gast von erster Aufmerksamkeit zur konkreten Absicht.\n\nDurch redaktionelle Führung und kontinuierliche Kuration entsteht eine digitale Präsenz, die sich wie eine lebendige Erzählung entwickelt und Vertrauen über Zeit aufbaut.",
+          "Hochwertige Hospitality wird zuerst über Wahrnehmung erlebt. Unsere visuellen Produktionen übersetzen Atmosphäre in Nachfrage und führen den Gast von erster Aufmerksamkeit zur konkreten Absicht.",
         bullets: [
           "Editorial Fotografie & Motion",
           "Soziale Erzählung & Digitale Kuration",
@@ -468,7 +468,7 @@ const de: TranslationBundle = {
         title: "Performance-Architektur\n& Strategische Distribution",
         subtitle: "Dort, wo Wahrnehmung zu Umsatz wird.",
         description:
-          "Sobald Wahrnehmung und Erzählung ausgerichtet sind, strukturieren wir die Kanäle, die Interesse in konkrete Buchungen überführen.\n\nUnsere Aufgabe ist es, sicherzustellen, dass die durch Präsenz erzeugte Nachfrage effizient erfasst wird, durch präzise Distribution und leistungsfähige Buchungsumgebungen.",
+          "Sobald Wahrnehmung und Erzählung ausgerichtet sind, strukturieren wir die Kanäle, die Interesse in konkrete Buchungen überführen.",
         bullets: [
           "Metasuche & Paid Distribution",
           "Direktbuchungs-Ökosystem",
@@ -483,7 +483,7 @@ const de: TranslationBundle = {
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "Perspektive ist eine Entscheidung.\nUnser Portfolio versteht sich als eine Studie darüber, wie Intention Verlangen formt. Nachfolgend eine Auswahl an Arbeiten, die sich auf Rhythmus, Licht und strategische Ausrichtung im Bereich Hospitality und Premium-Marken konzentrieren.\n\nDie Privatsphäre und Exklusivität unserer Partner haben für uns höchste Priorität. Daher präsentieren wir unsere Projekte als Wahrnehmungsstudien und nicht als reine Leistungsnachweise.",
+      "Perspektive ist eine Entscheidung. Unser Portfolio versteht sich als eine Studie darüber, wie Intention Verlangen formt.\nNachfolgend eine Auswahl an Arbeiten, die sich auf Rhythmus, Licht und strategische Ausrichtung im Bereich Hospitality und Premium-Marken konzentrieren.\n\nDie Privatsphäre und Exklusivität unserer Partner haben für uns höchste Priorität.\nDaher präsentieren wir unsere Projekte als Wahrnehmungsstudien und nicht als reine Leistungsnachweise.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
@@ -556,7 +556,7 @@ const pt: TranslationBundle = {
         title: "Estratégia de Percepção\n& Brand Premium",
         subtitle: "A base do valor.",
         description:
-          "Antes de produzir qualquer imagem ou ativar campanhas, definimos a autoridade de posicionamento da propriedade. Nosso foco está em fortalecer o Brand Premium e sustentar o poder de precificação dentro do cenário competitivo.\n\nPor meio de posicionamento estratégico e coerência visual, a propriedade deixa de ser percebida como uma opção entre muitas e passa a ocupar um lugar de referência dentro do seu destino.",
+          "Antes de produzir qualquer imagem ou ativar campanhas, definimos a autoridade de posicionamento da propriedade. Nosso foco está em fortalecer o Brand Premium e sustentar o poder de precificação dentro do cenário competitivo.",
         bullets: [
           "Posicionamento & Contexto de Mercado",
           "Identidade de Marca & Confiança Visual",
@@ -567,7 +567,7 @@ const pt: TranslationBundle = {
         title: "Inteligência Narrativa\n& Construção de Desejo",
         subtitle: "A arquitetura do desejo.",
         description:
-          "A hospitalidade de alto padrão é vivida, antes de tudo, pela percepção. Nossas produções visuais são concebidas para traduzir atmosfera em desejo, conduzindo o hóspede da curiosidade à intenção.\n\nPor meio de direção editorial e curadoria contínua, a presença digital se transforma em uma narrativa viva, capaz de construir confiança ao longo do tempo.",
+          "A hospitalidade de alto padrão é vivida, antes de tudo, pela percepção. Nossas produções visuais são concebidas para traduzir atmosfera em desejo, conduzindo o hóspede da curiosidade à intenção.",
         bullets: [
           "Fotografia Editorial & Motion",
           "Narrativa Social & Curadoria Digital",
@@ -578,7 +578,7 @@ const pt: TranslationBundle = {
         title: "Arquitetura de Performance \n& Distribuição Estratégica",
         subtitle: "Onde a percepção se converte em receita.",
         description: 
-          "Uma vez alinhadas a percepção e a narrativa, estruturamos os canais responsáveis por transformar interesse em reservas.\n\nNosso papel é garantir que a demanda gerada pela presença seja capturada com eficiência, por meio de uma distribuição qualificada e de ambientes de reserva preparados para conversão.",
+          "Uma vez alinhadas a percepção e a narrativa, estruturamos os canais responsáveis por transformar interesse em reservas.",
         bullets: [
           "Metasearch & Distribuição Paga",
           "Ecossistema de Reserva Direta",
@@ -666,7 +666,7 @@ const es: TranslationBundle = {
         title: "Estrategia de Percepción\n& Brand Premium",
         subtitle: "La base del valor.",
         description:
-          "Antes de producir contenido visual o activar canales, definimos la autoridad de posicionamiento de la propiedad. Nuestro objetivo es reforzar el Brand Premium y sostener la capacidad de precio dentro del entorno competitivo.\n\nA través de un posicionamiento estratégico y una coherencia visual, la propiedad deja de ser una opción más y pasa a ser una referencia dentro de su destino.",
+          "Antes de producir contenido visual o activar canales, definimos la autoridad de posicionamiento de la propiedad. Nuestro objetivo es reforzar el Brand Premium y sostener la capacidad de precio dentro del entorno competitivo.",
         bullets: [
           "Posicionamiento & Contexto de Mercado",
           "Identidad de Marca & Confianza Visual",
@@ -677,7 +677,7 @@ const es: TranslationBundle = {
         title: "Inteligencia Narrativa\n& Construcción del Deseo",
         subtitle: "La arquitectura del deseo.",
         description:
-          "La hospitalidad de alto nivel se experimenta primero a través de la percepción. Nuestras producciones visuales traducen la atmósfera en deseo, guiando al huésped desde la curiosidad hasta la intención.\n\nA través de dirección editorial y una curaduría continua, la presencia digital se convierte en una narrativa viva que construye confianza con el tiempo.",
+          "La hospitalidad de alto nivel se experimenta primero a través de la percepción. Nuestras producciones visuales traducen la atmósfera en deseo, guiando al huésped desde la curiosidad hasta la intención.",
         bullets: [
           "Fotografía Editorial & Motion",
           "Narrativa Social & Curaduría Digital",
@@ -688,7 +688,7 @@ const es: TranslationBundle = {
         title: "Arquitectura de Performance\n& Distribución Estratégica",
         subtitle: "Donde la percepción se convierte en ingresos.",
         description:
-          "Una vez alineadas la percepción y la narrativa, estructuramos los canales que transforman el interés en reservas.\n\nNuestro rol es asegurar que la demanda generada por la presencia sea capturada de forma eficiente, a través de distribución precisa y entornos de reserva optimizados.",
+          "Una vez alineadas la percepción y la narrativa, estructuramos los canales que transforman el interés en reservas.",
         bullets: [
           "Metasearch & Distribución Paid",
           "Ecosistema de Reserva Directa",
