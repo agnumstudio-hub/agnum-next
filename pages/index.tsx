@@ -13,18 +13,22 @@ function byKey(map: Record<string, ImageRow[]>, key: string) {
   return map[key] ?? [];
 }
 
+/**
+ * HeroTitle otimizado para SEO:
+ * O Google agora lê o seu título principal como um H1 real.
+ */
 function HeroTitle({ title }: { title: string }) {
   const clean = title.trim().replace(/\s+/g, " ");
   const words = clean.split(" ").filter(Boolean);
 
-  if (words.length < 3) return <>{title}</>;
+  if (words.length < 3) return <h1 className="hero-title-desktop">{title}</h1>;
 
   const firstLine = words.slice(0, 2).join(" ");
   const secondLine = words.slice(2).join(" ");
 
   return (
     <>
-      <span className="hero-title-desktop">{title}</span>
+      <h1 className="hero-title-desktop">{title}</h1>
       <span className="hero-title-mobile" aria-hidden="true">
         {firstLine}
         <br />
@@ -45,50 +49,45 @@ export default function HomePage({
   const heroRef = useRef<HTMLElement | null>(null);
   const manifestoRef = useRef<HTMLElement | null>(null);
 
+  // Mapeamento de imagens
   const hero = byKey(galleries, "home.hero")[0];
   const perspective = byKey(galleries, "home.perspective").slice(0, 4);
   const manifesto = byKey(galleries, "home.manifesto")[0];
   const aboutImg = byKey(galleries, "home.about")[0];
 
+  // Efeitos de Scroll (Motion)
   const { scrollYProgress } = useScroll({
     target: manifestoRef,
     offset: ["start end", "end start"],
   });
   const bgY = useSpring(useTransform(scrollYProgress, [0, 1], [-80, 80]), {
-    stiffness: 80,
-    damping: 22,
-    mass: 0.5,
+    stiffness: 80, damping: 22, mass: 0.5,
   });
   const textY = useSpring(useTransform(scrollYProgress, [0, 1], [38, -38]), {
-    stiffness: 95,
-    damping: 24,
-    mass: 0.45,
+    stiffness: 95, damping: 24, mass: 0.45,
   });
+
   const { scrollYProgress: heroScrollProgress } = useScroll({
     target: heroRef,
     offset: ["start start", "end start"],
   });
-  const heroImageY = useSpring(
-    useTransform(heroScrollProgress, [0, 1], [0, -22]),
-    { stiffness: 90, damping: 24, mass: 0.55 }
-  );
-  const heroImageScale = useSpring(
-    useTransform(heroScrollProgress, [0, 1], [1, 1.025]),
-    { stiffness: 90, damping: 24, mass: 0.55 }
-  );
-  const heroTextY = useSpring(useTransform(heroScrollProgress, [0, 1], [0, -12]), {
-    stiffness: 100,
-    damping: 28,
-    mass: 0.5,
+  const heroImageY = useSpring(useTransform(heroScrollProgress, [0, 1], [0, -22]), { 
+    stiffness: 90, damping: 24, mass: 0.55 
   });
-  const heroTextOpacity = useSpring(
-    useTransform(heroScrollProgress, [0, 1], [1, 0.76]),
-    { stiffness: 110, damping: 30, mass: 0.5 }
-  );
+  const heroImageScale = useSpring(useTransform(heroScrollProgress, [0, 1], [1, 1.025]), { 
+    stiffness: 90, damping: 24, mass: 0.55 
+  });
+  const heroTextY = useSpring(useTransform(heroScrollProgress, [0, 1], [0, -12]), { 
+    stiffness: 100, damping: 28, mass: 0.5 
+  });
+  const heroTextOpacity = useSpring(useTransform(heroScrollProgress, [0, 1], [1, 0.76]), { 
+    stiffness: 110, damping: 30, mass: 0.5 
+  });
 
   return (
-    <PublicLayout locale={locale} pageTitle="Home">
+    <PublicLayout locale={locale}>
       <main>
+        {/* HERO SECTION */}
         <section ref={heroRef} className="hero-section">
           <div className="container hero-section-inner">
             <motion.div
@@ -100,7 +99,7 @@ export default function HomePage({
             <motion.img
               src={`/images/${hero?.src ?? "HOME1.jpg"}`}
               className="hero-main-img"
-              alt={hero?.alt ?? "Hero"}
+              alt={hero?.alt ?? t.metadata.title}
               style={{ y: heroImageY, scale: heroImageScale }}
             />
             <motion.div
@@ -112,6 +111,7 @@ export default function HomePage({
           </div>
         </section>
 
+        {/* POSICIONAMENTO */}
         <section className="posicionamento">
           <div className="container posicionamento-inner">
             <div className="pos-label">{t.home.positionLabel}</div>
@@ -120,6 +120,7 @@ export default function HomePage({
           </div>
         </section>
 
+        {/* PERSPECTIVE / PORTFOLIO PREVIEW */}
         <section className="perspective-section">
           <div className="container perspective-section-inner">
             <div>
@@ -131,24 +132,24 @@ export default function HomePage({
                 <img
                   key={img.src}
                   src={`/images/${img.src}`}
-                  alt={img.alt ?? "Perspective"}
+                  alt={img.alt ?? "Boutique Hotel Design"}
                 />
               ))}
             </div>
-
             <Link href="/portfolio" locale={locale} className="underline">
               {t.home.perspectiveUnderline}
             </Link>
           </div>
         </section>
 
+        {/* MANIFESTO SECTION */}
         <section
           ref={manifestoRef}
           className="manifesto-section experience-section"
         >
           <motion.img
             src={`/images/${manifesto?.src ?? "HOME6.jpg"}`}
-            alt={manifesto?.alt ?? "Manifesto"}
+            alt={manifesto?.alt ?? "Luxury Hospitality Aesthetics"}
             className="manifesto-bg-image"
             style={{ y: bgY }}
           />
@@ -161,6 +162,7 @@ export default function HomePage({
           </div>
         </section>
 
+        {/* ABOUT SECTION */}
         <section className="about-section">
           <div className="container about-section-inner">
             <div className="about-content">
@@ -172,15 +174,15 @@ export default function HomePage({
                 {t.home.aboutUnderline}
               </Link>
             </div>
-
             <img
               src={`/images/${aboutImg?.src ?? "HOME7.jpg"}`}
               className="about-img"
-              alt={aboutImg?.alt ?? "About"}
+              alt={aboutImg?.alt ?? "AGNUM Creative Studio"}
             />
           </div>
         </section>
 
+        {/* CONTACT CTA */}
         <section className="contact-section">
           <div className="container contact-section-inner">
             <div className="contact-text">{renderMultiline(t.home.contactText)}</div>
@@ -217,4 +219,3 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     },
   };
 };
-
