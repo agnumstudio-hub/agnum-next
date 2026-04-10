@@ -23,8 +23,6 @@ function HeroTitle({ title }: { title: string }) {
   const secondLine = words.slice(2).join(" ");
 
   return (
-    <PublicLayout locale={locale}>
-   <main>
     <>
       <span className="hero-title-desktop">{title}</span>
       <span className="hero-title-mobile" aria-hidden="true">
@@ -89,7 +87,7 @@ export default function HomePage({
   );
 
   return (
-    <PublicLayout locale={locale}>
+    <PublicLayout locale={locale} pageTitle="Home">
       <main>
         <section ref={heroRef} className="hero-section">
           <div className="container hero-section-inner">
