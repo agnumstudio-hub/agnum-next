@@ -6,8 +6,8 @@ import type { ReactNode } from "react";
 export default function SiteHeader() {
   const router = useRouter();
   const { locales, locale, asPath } = router;
-  const currentLocale = locale ?? "pt";
-  const availableLocales = locales ?? ["pt", "en", "es"];
+  const currentLocale = locale ?? "en";
+  const availableLocales = locales ?? ["en", "pt", "es"];
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
