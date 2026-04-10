@@ -32,13 +32,11 @@ export default function HomePage({
   const heroRef = useRef<HTMLElement | null>(null);
   const manifestoRef = useRef<HTMLElement | null>(null);
 
-  // Mapeamento de imagens
   const hero = byKey(galleries, "home.hero")[0];
   const perspective = byKey(galleries, "home.perspective").slice(0, 4);
   const manifesto = byKey(galleries, "home.manifesto")[0];
   const aboutImg = byKey(galleries, "home.about")[0];
 
-  // Efeitos de Scroll (Motion)
   const { scrollYProgress } = useScroll({
     target: manifestoRef,
     offset: ["start end", "end start"],
@@ -106,8 +104,6 @@ export default function HomePage({
         {/* PERSPECTIVE / PORTFOLIO PREVIEW */}
         <section className="perspective-section">
           <div className="container perspective-section-inner">
-            
-            {/* Reveal no Título e Intro */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -118,24 +114,37 @@ export default function HomePage({
               <p style={{ fontSize: 18, marginTop: 36 }}>{t.home.perspectiveIntro}</p>
             </motion.div>
 
-            {/* Grid de Imagens com Reveal Sincronizado + Hover de Zoom */}
             <div className="p-grid">
               {perspective.map((img) => (
                 <motion.img
                   key={img.src}
                   src={`/images/${img.src}`}
                   alt={img.alt ?? "Boutique Hotel Design"}
-                  // --- Reveal Animation (Entrada ao rolar a página) ---
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  transition={{
-        
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
+                  style={{ cursor: 'pointer' }}
+                />
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3 }}
+            >
+              <Link href="/portfolio" locale={locale} className="underline">
+                {t.home.perspectiveUnderline}
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
         {/* MANIFESTO SECTION */}
-        <section
-          ref={manifestoRef}
-          className="manifesto-section experience-section"
-        >
+        <section ref={manifestoRef} className="manifesto-section experience-section">
           <motion.img
             src={`/images/${manifesto?.src ?? "HOME6.jpg"}`}
             alt={manifesto?.alt ?? "Luxury Hospitality Aesthetics"}
@@ -187,24 +196,11 @@ export default function HomePage({
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const locale = ctx.locale ?? "pt";
-
-  const keys = [
-    "home.hero",
-    "home.perspective",
-    "home.manifesto",
-    "home.about",
-  ];
-
+  const keys = ["home.hero", "home.perspective", "home.manifesto", "home.about"];
   const rows = await getGalleriesByKeys(keys);
   const galleries: Record<string, ImageRow[]> = {};
   for (const g of rows) {
     galleries[g.key] = (g.images as any) as ImageRow[];
   }
-
-  return {
-    props: {
-      locale,
-      galleries,
-    },
-  };
+  return { props: { locale, galleries } };
 };
