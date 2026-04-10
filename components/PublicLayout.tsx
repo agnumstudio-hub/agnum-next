@@ -12,7 +12,7 @@ interface PublicLayoutProps {
 
 export default function PublicLayout({
   children,
-  locale = "pt",
+  locale = "en",
   pageTitle,
 }: PublicLayoutProps) {
   const t = getT(locale) as any;
