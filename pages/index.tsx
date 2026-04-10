@@ -13,28 +13,11 @@ function byKey(map: Record<string, ImageRow[]>, key: string) {
   return map[key] ?? [];
 }
 
-/**
- * HeroTitle otimizado para SEO:
- * O Google agora lê o seu título principal como um H1 real.
- */
 function HeroTitle({ title }: { title: string }) {
-  const clean = title.trim().replace(/\s+/g, " ");
-  const words = clean.split(" ").filter(Boolean);
-
-  if (words.length < 3) return <h1 className="hero-title-desktop">{title}</h1>;
-
-  const firstLine = words.slice(0, 2).join(" ");
-  const secondLine = words.slice(2).join(" ");
-
   return (
-    <>
-      <h1 className="hero-title-desktop">{title}</h1>
-      <span className="hero-title-mobile" aria-hidden="true">
-        {firstLine}
-        <br />
-        {secondLine}
-      </span>
-    </>
+    <h1 className="hero-title">
+      {renderMultiline(title)}
+    </h1>
   );
 }
 
