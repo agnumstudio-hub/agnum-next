@@ -558,9 +558,17 @@ const pt: TranslationBundle = {
         description:
           "Antes de produzir qualquer imagem ou ativar campanhas, definimos a autoridade de posicionamento da propriedade. Nosso foco está em fortalecer o Brand Premium e sustentar o poder de precificação dentro do cenário competitivo.",
         bullets: [
-          "Posicionamento & Contexto de Mercado",
-          "Identidade de Marca & Confiança Visual",
-          "Autoridade de destino",
+      { 
+        label: "Posicionamento & Contexto de Mercado", 
+        answer: "Compreender o cenário competitivo para sustentar maior autoridade de preço." 
+      },
+      { 
+        label: "Identidade de Marca & Confiança Visual", 
+        answer: "Desenvolver sistemas de identidade que comuniquem refinamento e credibilidade ao longo do tempo." 
+      },
+      { 
+        label: "Autoridade de Destino", 
+        answer: "Posicionar a propriedade como uma presença determinante dentro de sua geografia.",
         ],
       },
       {
@@ -569,9 +577,17 @@ const pt: TranslationBundle = {
         description:
           "A hospitalidade de alto padrão é vivida, antes de tudo, pela percepção. Nossas produções visuais são concebidas para traduzir atmosfera em desejo, conduzindo o hóspede da curiosidade à intenção.",
         bullets: [
-          "Fotografia Editorial & Motion",
-          "Narrativa Social & Curadoria Digital",
-          "Narrativa Sequencial",
+      { 
+        label: "Fotografia Editorial & Motion", 
+        answer: "Produção visual com linguagem cinematográfica, orientada por atmosfera, materialidade e estímulos sensoriais." 
+      },
+      { 
+        label: "Narrativa Social & Curadoria Digital", 
+        answer: "Gestão da presença digital como um ecossistema editorial contínuo, e não como conteúdos isolados." 
+      },
+      { 
+        label: "Narrativa Sequencial", 
+        answer: "Construção de uma progressão de pontos de contato que sustenta a atenção e conduz o hóspede até a decisão.",
         ],
       },
       {
@@ -580,9 +596,13 @@ const pt: TranslationBundle = {
         description: 
           "Uma vez alinhadas a percepção e a narrativa, estruturamos os canais responsáveis por transformar interesse em reservas.",
         bullets: [
-          "Metasearch & Distribuição Paga",
-          "Ecossistema de Reserva Direta",
-          "Conversão & Revenue Optimization",
+      { 
+        label: "Metasearch & Distribuição Paga", 
+        answer: "Gestão estratégica de canais como Google Hotel Ads, Meta Ads e plataformas internacionais de demanda." 
+      },
+      { 
+        label: "Ecossistema de Reserva Direta", 
+        answer: "Desenvolvimento de ambientes digitais sem fricção, integrados a motores de reserva de alta performance.",
         ],
       },
     ],
