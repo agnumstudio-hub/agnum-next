@@ -73,7 +73,7 @@ const en: TranslationBundle = {
   home: {
     heroTitle: "presence is designed.",
     heroText:
-      "A creative studio shaping presence for hospitality, experiences and\nhigh-end brands.",
+      "A creative studio shaping presence for hospitality, experiences and high-end brands.",
     positionLabel: "OUR POSITION",
     positionText:
       "AGNUM translates quality into presence, with clarity, restraint, and long-term intention.\n\nWe bridge the gap between aesthetic intelligence and commercial performance, ensuring that refined perception drives measurable value.",
@@ -215,7 +215,7 @@ const fr: TranslationBundle = {
   home: {
     heroTitle: "La présence se construit.",
     heroText:
-      "Un studio créatif qui façonne la présence\npour l’hôtellerie, les\nexpériences et les marques\nhaut de gamme.",
+      "Un studio créatif qui façonne la présence pour l’hôtellerie, les expériences et les marques haut de gamme.",
     positionLabel: "POSITIONNEMENT",
     positionText:
       "AGNUM traduit la qualité en présence, avec clarté, retenue et vision à long terme.\n\nNous relions intelligence esthétique et logique de marché, afin qu’une perception maîtrisée devienne une valeur concrète.",
