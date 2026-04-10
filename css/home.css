@@ -495,8 +495,8 @@
     left: auto;
     transform: none;
     width: 100%;
-    max-width: 280px;
-    text-align: right;
+    max-width: 300px;
+    text-align: right center;
   }
 
   .manifesto-section .manifesto-text h2 {
