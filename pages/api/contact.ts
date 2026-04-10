@@ -19,10 +19,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ error: "Invalid payload" });
   }
 
-  // Neste momento, enviamos para o console (você pode trocar por e-mail/CRM depois).
-  // eslint-disable-next-line no-console
-  console.log("[contact]", parsed.data);
+  try {
+    // Aqui fazemos a ponte entre seu site e o Formspree
+    const response = await fetch("https://formspree.io/f/xgopjjrg", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(parsed.data),
+    });
 
-  return res.status(200).json({ ok: true });
+    if (response.ok) {
+      return res.status(200).json({ ok: true });
+    } else {
+      return res.status(500).json({ error: "Failed to send message via Formspree" });
+    }
+  } catch (error) {
+    return res.status(500).json({ error: "Internal server error" });
+  }
 }
-
