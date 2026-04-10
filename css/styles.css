@@ -586,18 +586,17 @@ html {
   }
 
   .footer-inner {
-    display: block !important;
-    margin-top: 32px !important;
-    width: 100% !important;
-    padding: 0 0 60px 0 !important;
-  }
+  display: flex;
+  justify-content: space-between; /* Isso joga o texto para um lado e os links para o outro */
+  align-items: center;
+  width: 100%;
+}
 
   .footer-copy {
-    display: block !important;
-    text-align: left !important;
-    margin-bottom: 32px !important;
-    font-size: 14px;
-  }
+  text-align: left; /* Garante que o texto alinhe à esquerda */
+  margin-left: 0;   /* Remove margens automáticas que centralizam */
+  flex: 1;          /* Faz o texto ocupar o espaço disponível à esquerda */
+}
 
   .footer-social {
     display: flex !important;
