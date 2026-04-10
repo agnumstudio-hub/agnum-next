@@ -25,7 +25,7 @@ export default function StudioPage({
   const editorialBreak = byKey(galleries, "studio.editorialBreak")[0];
 
   return (
-    <PublicLayout locale={locale}>
+   <PublicLayout locale={locale} pageTitle="The Studio">
       <main>
         <section
           className="studio-hero"
