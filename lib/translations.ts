@@ -1,7 +1,7 @@
 import React from "react";
 import type { ReactNode } from "react";
 
-export type Locale = "en" | "pt" | "es";
+export type Locale = "en"| "fr" | "it" | "dt" | "pt" | "es";
 
 export type TranslationBundle = {
   nav: { studio: string; portfolio: string; contact: string };
@@ -167,6 +167,336 @@ const en: TranslationBundle = {
       message: "YOUR MESSAGE",
       send: "SEND",
       sent: "MESSAGE SENT",
+    },
+  },
+};
+
+const fr: TranslationBundle = {
+  nav: { studio: "THE STUDIO", portfolio: "PORTFOLIO", contact: "CONTACT" },
+  footer: en.footer,
+  home: {
+    heroTitle: "La présence se construit.",
+    heroText:
+      "Un studio créatif qui façonne la présence pour l’hôtellerie, les expériences et les marques haut de gamme.",
+    positionLabel: "POSITIONNEMENT",
+    positionText:
+      "AGNUM traduit la qualité en présence, avec clarté, retenue et vision à long terme.\n\nNous relions intelligence esthétique et logique de marché, afin qu’une perception maîtrisée devienne une valeur concrète.",
+    positionFooterLabel: "AGNUM CREATIVE STUDIO 26",
+    perspectiveTitle: "perspective",
+    perspectiveIntro: "Une sélection de directions visuelles et stratégiques.",
+    perspectiveUnderline: "Découvrir le portfolio",
+    manifestoTitle: "L’expérience se ressent avant de s’expliquer.",
+    manifestoText:
+      "Nous pensons que la présence n’est jamais le fruit du hasard.\nElle se construit par l’observation, l’intention et la retenue.\nLa direction stratégique permet à cette perception de devenir un actif durable.",
+    aboutTitle: "the studio",
+    aboutText:
+      "Notre travail se situe entre direction, esthétique et stratégie.\n\nNous accompagnons les marques hôtelières à travers une approche double : construire une narration visuelle exigeante et assurer sa diffusion auprès des bons publics, avec précision et cohérence.\n\nNous traduisons la perception en valeur.",
+    aboutUnderline: "the studio",
+    contactText:
+      "Nous travaillons avec un nombre limité de partenaires chaque année.\n\nSi vous développez une expérience, un lieu ou une marque et recherchez une direction claire et intentionnelle, nous serions ravis d’engager la conversation.",
+    contactUnderline: "contact the studio",
+  },
+  studio: {
+    heroTitle: "the studio",
+    intro: {
+      lead: "AGNUM est née d’une observation simple.",
+      strong:
+        "Des expériences exceptionnelles ne se traduisent pas toujours par une présence à leur hauteur.",
+      body:
+        "Notre travail consiste à réduire cet écart. Non seulement pour préserver l’esthétique, mais pour aligner perception, positionnement et demande. Nous combinons sensibilité créative et rigueur stratégique, dans le respect de l’intelligence de la marque et de son audience, tout en soutenant sa performance commerciale.",
+    },
+    editorial: {
+      observationLabel: "Observation",
+      observationBody:
+        "Nous commençons par observer. L’espace, la lumière, le rythme, mais aussi le contexte de marché. Comprendre la position d’une propriété dans son environnement concurrentiel permet d’identifier les leviers : là où la perception peut être affinée, où le positionnement peut gagner en clarté, et où la demande peut être orientée avec précision.\nEn alignant désir du client et dynamique du marché, nous définissons la direction avant toute production.",
+      intentionLabel: "intention",
+      intentionBody:
+        "Dans le haut de gamme, le hasard est un risque. Chaque décision est assumée. Du cadrage d’une image à la structuration des canaux de diffusion, direction créative et logique commerciale avancent ensemble. La narration visuelle n’est pas distincte de la performance. Elle en est le fondement.\nChaque point de contact guide la perception vers la confiance, puis la confiance vers la réservation directe.",
+      restraintLabel: "retenue",
+      restraintBody:
+        "Les marques les plus visibles ne sont pas toujours les plus précieuses. Dans l’hôtellerie haut de gamme, la clarté crée l’autorité. En éliminant le superflu, nous révélons ce qui compte. Cette retenue renforce la valeur perçue, soutient un positionnement premium et attire une audience plus qualifiée.\nLe résultat est une présence capable de soutenir des tarifs plus élevés et une demande plus maîtrisée.",
+      continuityLabel: "continuité",
+      continuityBody:
+        "La présence n’est pas une campagne. Elle se construit dans le temps. Nous pensons la continuité à chaque étape du parcours digital. En alignant contenu, distribution et structure, nous créons un écosystème où la perception reste cohérente et la demande durable.\nAinsi, l’attention devient valeur.",
+    },
+    editorialBreakText:
+      "Notre travail s’articule autour de trois dimensions.\n\nPerception.\nNarration.\nPerformance.\n\nChacune renforce l’autre.",
+    services: [
+      {
+        title: "Stratégie de Perception\n& Brand Premium",
+        subtitle: "Le fondement de la valeur.",
+        description:
+          "Avant de produire des contenus visuels ou d’activer des campagnes, nous définissons l’autorité de positionnement de la propriété. Notre objectif est de renforcer le Brand Premium et de soutenir la capacité tarifaire dans un environnement concurrentiel.\n\nGrâce à un positionnement stratégique et une cohérence visuelle, la propriété cesse d’être perçue comme une option parmi d’autres et devient une référence au sein de sa destination.",
+        bullets: [
+          "Positionnement & Contexte de Marché",
+          "Identité de Marque & Confiance Visuelle",
+          "Autorité de Destination",
+        ],
+      },
+      {
+        title: "Intelligence Narrative\n& Construction du Désir",
+        subtitle: "L’architecture du désir.",
+        description:
+          "L’hôtellerie haut de gamme est d’abord vécue à travers la perception. Nos productions visuelles sont conçues pour transformer l’atmosphère en désir, guidant le client de la curiosité vers l’intention.\n\nGrâce à une direction éditoriale et une curation continue, la présence digitale devient une narration vivante, capable d’installer la confiance dans le temps.",
+        bullets: [
+          "Photographie Éditoriale & Motion",
+          "Narration Sociale & Curation Digitale",
+          "Narration Séquentielle",
+        ],
+      },
+      {
+        title: "Architecture de Performance\n& Distribution Stratégique",
+        subtitle: "Là où la perception devient revenu.",
+        description:
+          "Une fois la perception et la narration alignées, nous structurons les canaux qui transforment l’intérêt en réservation.\n\nNotre rôle est de garantir que la demande générée par la présence soit captée avec précision, à travers une distribution maîtrisée et des environnements de réservation optimisés.",
+        bullets: [
+          "Metasearch & Distribution Paid",
+          "Écosystème de Réservation Directe",
+          "Conversion & Optimisation des Revenus",
+        ],
+      },
+    ],
+    contactText:
+      "Nous travaillons avec un nombre limité de partenaires chaque année.\n\nSi vous développez une expérience, un lieu ou une marque et recherchez une direction claire et intentionnelle, nous serions ravis d’engager la conversation.",
+    contactUnderline: "contact the studio",
+  },
+  portfolio: {
+    title: "PORTFOLIO",
+    description:
+      "La perspective est un choix.\nNotre portfolio est une étude de la manière dont l’intention façonne le désir. Vous trouverez ci-dessous une sélection de projets guidés par le rythme, la lumière et l’alignement stratégique pour l’hôtellerie et les marques haut de gamme.\n\nNous accordons une grande importance à la confidentialité et à l’exclusivité de nos partenaires ; nos projets sont donc présentés comme des études de perception plutôt que comme de simples réalisations.",
+    cta: "CONTACT THE STUDIO",
+  },
+  contact: {
+    title: "CONTACT\nTHE STUDIO",
+    description:
+      "Nous travaillons avec un nombre limité de partenaires chaque année.\nLes demandes réfléchies et les collaborations à long terme font partie intégrante de notre approche.\n\nSi vous développez une expérience, un lieu ou une marque et recherchez une direction claire et intentionnelle, nous serions ravis d’échanger avec vous.",
+    form: {
+      name: "NOM",
+      company: "ENTREPRISE",
+      email: "E-MAIL",
+      message: "VOTRE MESSAGE",
+      send: "ENVOYER",
+      sent: "MESSAGE ENVOYÉ",
+    },
+  },
+};
+
+const it: TranslationBundle = {
+  nav: { studio: "THE STUDIO", portfolio: "PORTFOLIO", contact: "CONTACT" },
+  footer: en.footer,
+  home: {
+    heroTitle: "La presenza si costruisce.",
+    heroText:
+      "Uno studio creativo che costruisce la presenza per l’ospitalità, le esperienze e i brand di alta gamma.",
+    positionLabel: "POSIZIONAMENTO",
+    positionText:
+      "AGNUM traduce la qualità in presenza, con chiarezza, misura e visione a lungo termine.\n\nMettiamo in relazione intelligenza estetica e logica di mercato, affinché una percezione raffinata generi valore reale.",
+    positionFooterLabel: "AGNUM CREATIVE STUDIO 26",
+    perspectiveTitle: "prospettiva",
+    perspectiveIntro: "Una selezione curata di direzioni visive e strategiche.",
+    perspectiveUnderline: "Esplora il portfolio",
+    manifestoTitle: "L’esperienza si percepisce prima di essere spiegata.",
+    manifestoText:
+      "Crediamo che la presenza non sia casuale.\nSi costruisce attraverso osservazione, intenzione e misura.\nLa direzione strategica è ciò che trasforma questa percezione in un valore duraturo.",
+    aboutTitle: "the studio",
+    aboutText:
+      "Il nostro lavoro si muove tra direzione, estetica e strategia.\n\nSupportiamo i brand dell’ospitalità attraverso un approccio duplice: costruire una narrazione visiva rigorosa e garantire che raggiunga il pubblico corretto, con coerenza e precisione.\n\nTraduciamo la percezione in valore.",
+    aboutUnderline: "the studio",
+    contactText:
+      "Lavoriamo ogni anno con un numero limitato di partner.\n\nSe stai sviluppando un’esperienza, un luogo o un brand e cerchi una direzione chiara e intenzionale, saremo lieti di avviare una conversazione.",
+    contactUnderline: "contact the studio",
+  },
+  studio: {
+    heroTitle: "the studio",
+    intro: {
+      lead: "AGNUM nasce da un’osservazione semplice.",
+      strong:
+        "Esperienze eccezionali non si traducono sempre in una presenza altrettanto raffinata.",
+      body:
+        "Il nostro lavoro consiste nel colmare questa distanza. Non solo per preservare l’estetica, ma per allineare percezione, posizionamento e domanda. Uniamo sensibilità creativa e struttura strategica, rispettando l’intelligenza del brand e del suo pubblico, sostenendo al tempo stesso la sua performance.",
+    },
+    editorial: {
+      observationLabel: "Osservazione",
+      observationBody:
+        "Partiamo dall’osservazione. Dello spazio, della luce, del ritmo, ma anche del contesto competitivo. Comprendere la posizione di una proprietà permette di individuare opportunità: dove la percezione può evolvere, dove il posizionamento può essere più chiaro e dove la domanda può essere guidata.\nCosì definiamo la direzione prima ancora della produzione.",
+      intentionLabel: "intenzione",
+      intentionBody:
+        "Nel segmento alto, il caso è un rischio. Ogni scelta è intenzionale. Dall’inquadratura di un’immagine alla struttura dei canali di distribuzione, direzione creativa e logica commerciale lavorano insieme. La narrazione visiva non è separata dalla performance, la sostiene.\nOgni punto di contatto accompagna la percezione verso la fiducia, e la fiducia verso la prenotazione diretta.",
+      restraintLabel: "misura",
+      restraintBody:
+        "I brand più visibili non sono sempre i più rilevanti. Nel mondo dell’ospitalità di alto livello, è la chiarezza a creare autorevolezza. Eliminando il superfluo, lasciamo emergere ciò che conta. Questo approccio rafforza il valore percepito, sostiene il posizionamento e attira il pubblico giusto.\nIl risultato è una presenza capace di sostenere tariffe più elevate e una domanda più stabile.",
+      continuityLabel: "continuità",
+      continuityBody:
+        "La presenza non è una campagna. Si costruisce nel tempo. Progettiamo la continuità lungo tutto il percorso digitale. Allineando contenuto, distribuzione e struttura, creiamo un sistema coerente e sostenibile.\nCosì l’attenzione si trasforma in valore nel tempo.",
+    },
+    editorialBreakText:
+      "Il nostro lavoro si sviluppa su tre dimensioni.\n\nPercezione.\nNarrazione.\nPerformance.\n\nOgnuna rafforza l’altra.",
+    services: [
+      {
+        title: "Strategia di Percezione\n& Brand Premium",
+        subtitle: "La base del valore.",
+        description:
+          "Prima di produrre contenuti visivi o attivare canali, definiamo l’autorità di posizionamento della struttura. Il nostro obiettivo è rafforzare il Brand Premium e sostenere la capacità di pricing all’interno del contesto competitivo.\n\nAttraverso un posizionamento strategico e una coerenza visiva, la struttura non viene percepita come un’opzione tra molte, ma come un punto di riferimento nel proprio territorio.",
+        bullets: [
+          "Posizionamento & Contesto di Mercato",
+          "Identità di Marca & Fiducia Visiva",
+          "Autorità di Destinazione",
+        ],
+      },
+      {
+        title: "Intelligenza Narrative\n& Costruzione del Desiderio",
+        subtitle: "L’architettura del desiderio.",
+        description:
+          "L’ospitalità di alto livello viene vissuta prima attraverso la percezione. Le nostre produzioni visive traducono l’atmosfera in desiderio, accompagnando l’ospite dalla curiosità all’intenzione.\n\nAttraverso direzione editoriale e una curatela continua, la presenza digitale diventa una narrazione viva che costruisce fiducia nel tempo.",
+        bullets: [
+          "Fotografia Editoriale & Motion",
+          "Narrazione Social & Curatela Digitale",
+          "Narrazione Sequenziale",
+        ],
+      },
+      {
+        title: "Architettura di Performance\n& Distribuzione Strategica",
+        subtitle: "Dove la percezione diventa valore.",
+        description:
+          "Una volta allineate percezione e narrazione, strutturiamo i canali che trasformano l’interesse in prenotazioni.\n\nIl nostro ruolo è garantire che la domanda generata dalla presenza venga intercettata con efficienza, attraverso una distribuzione precisa e ambienti di prenotazione performanti.",
+        bullets: [
+          "Metasearch & Distribuzione Paid",
+          "Ecossistema di Prenotazione Diretta",
+          "Conversione & Ottimizzazione dei Ricavi",
+        ],
+      },
+    ],
+    contactText:
+      "Lavoriamo ogni anno con un numero limitato di partner.\n\nSe stai sviluppando un’esperienza, un luogo o un brand e cerchi una direzione chiara e intenzionale, saremo lieti di avviare una conversazione.",
+    contactUnderline: "contact the studio",
+  },
+  portfolio: {
+    title: "PORTFOLIO",
+    description:
+      "La prospettiva è una scelta.\nIl nostro portfolio è uno studio su come l’intenzione costruisce il desiderio. Di seguito, una selezione di lavori guidati da ritmo, luce e allineamento strategico per l’ospitalità e i brand di alta gamma.\n\nAttribuiamo grande valore alla riservatezza e all’esclusività dei nostri partner; per questo motivo, i nostri progetti vengono presentati come studi di percezione e non come semplici esecuzioni.",
+    cta: "CONTACT THE STUDIO",
+  },
+  contact: {
+    title: "CONTACT\nTHE STUDIO",
+    description:
+      "Lavoriamo ogni anno con un numero limitato di partner.\nRichieste ponderate e collaborazioni a lungo termine fanno parte del nostro modo di operare.\n\nSe stai sviluppando un’esperienza, un luogo o un brand e cerchi una direzione chiara e intenzionale, saremo lieti di ascoltarti.",
+    form: {
+      name: "NOME",
+      company: "AZIENDA",
+      email: "E-MAIL",
+      message: "IL TUO MESSAGGIO",
+      send: "INVIARE",
+      sent: "MESSAGGIO INVIATO",
+    },
+  },
+};
+
+const de: TranslationBundle = {
+  nav: { studio: "THE STUDIO", portfolio: "PORTFOLIO", contact: "CONTACT" },
+  footer: en.footer,
+  home: {
+    heroTitle: "Präsenz entsteht mit Absicht.",
+    heroText:
+      "Ein Kreativstudio, das Präsenz für Hotellerie, Erlebnisse und hochwertige Marken entwickelt.",
+    positionLabel: "POSITIONIERUNG",
+    positionText:
+      "AGNUM übersetzt Qualität in Präsenz, mit Klarheit, Zurückhaltung und langfristiger Ausrichtung.\n\nWir verbinden ästhetische Intelligenz mit unternehmerischer Logik, sodass eine präzise Wahrnehmung echten Wert schafft.",
+    positionFooterLabel: "AGNUM CREATIVE STUDIO 26",
+    perspectiveTitle: "perspektive",
+    perspectiveIntro: "Eine kuratierte Auswahl visueller und strategischer Richtungen.",
+    perspectiveUnderline: "Portfolio ansehen",
+    manifestoTitle: "Erfahrung wird gefühlt, bevor sie erklärt wird.",
+    manifestoText:
+      "Wir sind überzeugt, dass Präsenz nicht zufällig entsteht.\nEs entwickelt sich durch Beobachtung, Absicht und Zurückhaltung.\nStrategische Ausrichtung ist das, was diese Wahrnehmung in einen nachhaltigen Wert überführt.",
+    aboutTitle: "the studio",
+    aboutText:
+      "Unsere Arbeit bewegt sich zwischen Richtung, Ästhetik und strategischem Marketing.\n\nWir begleiten Hospitality-Marken mit einem doppelten Ansatz: eine präzise visuelle Erzählung zu entwickeln und sicherzustellen, dass sie die richtigen Zielgruppen erreicht.\n\nWir übersetzen Wahrnehmung in messbaren Wert.",
+    aboutUnderline: "the studio",
+    contactText:
+      "Wir arbeiten jedes Jahr mit einer begrenzten Anzahl von Partnern.\n\nWenn Sie eine Erfahrung, einen Ort oder eine Marke gestalten und nach klarer und bewusster Ausrichtung suchen, freuen wir uns darauf, von Ihnen zu hören.",
+    contactUnderline: "contact the studio",
+  },
+  studio: {
+    heroTitle: "the studio",
+    intro: {
+      lead: "AGNUM entstand aus einer einfachen Beobachtung.",
+      strong:
+        "Außergewöhnliche Erlebnisse übersetzen sich nicht immer in eine ebenso präzise Präsenz.",
+      body:
+        "Unsere Arbeit besteht darin, diese Distanz zu überbrücken. Nicht nur, um Ästhetik zu bewahren, sondern um Wahrnehmung, Positionierung und Nachfrage in Einklang zu bringen. Wir verbinden kreative Sensibilität mit strategischer Struktur und berücksichtigen sowohl die Marke als auch ihr Publikum, während wir gleichzeitig die wirtschaftliche Performance unterstützen.",
+    },
+    editorial: {
+      observationLabel: "Beobachtung",
+      observationBody:
+        "Am Anfang steht die Beobachtung. Nicht nur von Raum, Licht und Rhythmus, sondern auch vom Marktumfeld. Zu verstehen, wo sich eine Immobilie im Wettbewerbsumfeld positioniert, macht Potenziale sichtbar: wo Wahrnehmung geschärft werden kann, wo Positionierung klarer wird und wo Nachfrage gezielt gesteuert werden kann.\nSo entsteht strategische Klarheit, bevor überhaupt Inhalte produziert werden.",
+      intentionLabel: "intention",
+      intentionBody:
+        "Im Premiumsegment ist Zufall ein Risiko. Jede Entscheidung ist bewusst getroffen. Von der Bildkomposition bis zur Struktur der Distribution arbeiten kreative und wirtschaftliche Logik zusammen. Visuelle Kommunikation ist kein Zusatz zur Performance. Sie ist ihre Grundlage.\nJeder Kontaktpunkt führt Wahrnehmung zu Vertrauen und Vertrauen zur Direktbuchung.",
+      restraintLabel: "reduktion",
+      restraintBody:
+        "Die lautesten Marken sind selten die wertvollsten. Im gehobenen Segment schafft Klarheit Autorität. Durch Reduktion entsteht Präzision. Diese Haltung stärkt den wahrgenommenen Wert, unterstützt Premium-Positionierung und spricht die richtigen Zielgruppen an.\nDas Ergebnis ist eine Präsenz, die höhere Preise und stabilere Nachfrage tragen kann.",
+      continuityLabel: "kontinuität",
+      continuityBody:
+        "Präsenz ist keine Kampagne. Sie entsteht über Zeit. Wir gestalten Kontinuität entlang der gesamten digitalen Reise. Durch die Verbindung von Inhalt, Distribution und Struktur entsteht ein System, in dem Wahrnehmung konsistent bleibt und Nachfrage nachhaltig wächst.\nSo wird Aufmerksamkeit zu langfristigem Wert.",
+    },
+    editorialBreakText:
+      "Unsere Arbeit basiert auf drei Dimensionen.\n\nWahrnehmung.\nNarrativ.\nPerformance.\n\nSie verstärken sich gegenseitig.",
+    services: [
+      {
+        title: "Wahrnehmungsstrategie\n& Brand Premium",
+        subtitle: "Die Grundlage von Wert.",
+        description:
+          "Bevor visuelle Inhalte entstehen oder Kanäle aktiviert werden, definieren wir die Positionierungsautorität der Immobilie. Unser Fokus liegt darauf, das Brand Premium zu stärken und die Preissetzung innerhalb des Wettbewerbsumfelds nachhaltig zu unterstützen.\n\nDurch strategische Positionierung und visuelle Kohärenz wird die Immobilie nicht als eine Option unter vielen wahrgenommen, sondern als Referenz innerhalb ihrer Destination.",
+        bullets: [
+          "Positionierung & Marktumfeld",
+          "Markenidentität & Visuelles Vertrauen",
+          "Destinationsautorität",
+        ],
+      },
+      {
+        title: "Narrative Intelligenz\n& Aspirative Erzählung",
+        subtitle: "Die Architektur des Begehrens.",
+        description:
+          "Hochwertige Hospitality wird zuerst über Wahrnehmung erlebt. Unsere visuellen Produktionen übersetzen Atmosphäre in Nachfrage und führen den Gast von erster Aufmerksamkeit zur konkreten Absicht.\n\nDurch redaktionelle Führung und kontinuierliche Kuration entsteht eine digitale Präsenz, die sich wie eine lebendige Erzählung entwickelt und Vertrauen über Zeit aufbaut.",
+        bullets: [
+          "Editorial Fotografie & Motion",
+          "Soziale Erzählung & Digitale Kuration",
+          "Sequenzielle Erzählstruktur",
+        ],
+      },
+      {
+        title: "Performance-Architektur\n& Strategische Distribution",
+        subtitle: "Dort, wo Wahrnehmung zu Umsatz wird.",
+        description:
+          "Sobald Wahrnehmung und Erzählung ausgerichtet sind, strukturieren wir die Kanäle, die Interesse in konkrete Buchungen überführen.\n\nUnsere Aufgabe ist es, sicherzustellen, dass die durch Präsenz erzeugte Nachfrage effizient erfasst wird, durch präzise Distribution und leistungsfähige Buchungsumgebungen.",
+        bullets: [
+          "Metasuche & Paid Distribution",
+          "Direktbuchungs-Ökosystem",
+          "Conversion & Umsatzoptimierung",
+        ],
+      },
+    ],
+    contactText:
+      "Wir arbeiten jedes Jahr mit einer begrenzten Anzahl von Partnern.\n\nWenn Sie eine Erfahrung, einen Ort oder eine Marke gestalten und nach klarer und bewusster Ausrichtung suchen, freuen wir uns, ein Gespräch mit Ihnen zu beginnen.",
+    contactUnderline: "contact the studio",
+  },
+  portfolio: {
+    title: "PORTFOLIO",
+    description:
+      "Perspektive ist eine Entscheidung.\nUnser Portfolio versteht sich als eine Studie darüber, wie Intention Verlangen formt. Nachfolgend eine Auswahl an Arbeiten, die sich auf Rhythmus, Licht und strategische Ausrichtung im Bereich Hospitality und Premium-Marken konzentrieren.\n\nDie Privatsphäre und Exklusivität unserer Partner haben für uns höchste Priorität. Daher präsentieren wir unsere Projekte als Wahrnehmungsstudien und nicht als reine Leistungsnachweise.",
+    cta: "CONTACT THE STUDIO",
+  },
+  contact: {
+    title: "CONTACT\nTHE STUDIO",
+    description:
+      "Wir arbeiten jedes Jahr mit einer begrenzten Anzahl von Partnern.\nDurchdachte Anfragen und langfristige Zusammenarbeit sind ein wesentlicher Teil unserer Arbeitsweise.\n\nWenn Sie eine Erfahrung, einen Ort oder eine Marke gestalten und nach klarer und bewusster Ausrichtung suchen, freuen wir uns darauf, von Ihnen zu hören.",
+    form: {
+      name: "NAME",
+      company: "UNTERNEHMEN",
+      email: "E-MAIL",
+      message: "IHRE NACHRICHT",
+      send: "SENDEN",
+      sent: "NACHRICHT GESENDET",
     },
   },
 };
@@ -391,7 +721,7 @@ const es: TranslationBundle = {
   },
 };
 
-export const translations: Record<Locale, TranslationBundle> = { en, pt, es };
+export const translations: Record<Locale, TranslationBundle> = { en, fr, it, dt, pt, es };
 
 export function getT(locale?: string): TranslationBundle {
   const l = (locale as Locale) ?? "en";
