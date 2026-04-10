@@ -2,12 +2,15 @@ export default function SiteFooter({ locale }: { locale?: string }) {
   const year = new Date().getFullYear();
 
   const copyByLocale: Record<string, string> = {
-    pt: `© ${year} AGNUM CREATIVE STUDIO. Todos os direitos reservados.`,
-    en: `© ${year} AGNUM CREATIVE STUDIO. All rights reserved.`,
-    es: `© ${year} AGNUM CREATIVE STUDIO. Todos los derechos reservados.`,
+  en: `© \${year} AGNUM CREATIVE STUDIO. All rights reserved.`,
+  fr: `© \${year} AGNUM CREATIVE STUDIO. Tous droits réservés.`,
+  it: `© \${year} AGNUM CREATIVE STUDIO. Tutti i diritti riservati.`,
+  de: `© \${year} AGNUM CREATIVE STUDIO. Alle Rechte vorbehalten.`, // 'de' é o padrão ISO para Alemão (Deutsch)
+  pt: `© \${year} AGNUM CREATIVE STUDIO. Todos os direitos reservados.`,
+  es: `© \${year} AGNUM CREATIVE STUDIO. Todos los derechos reservados.`,,
   };
 
-  const copy = copyByLocale[locale ?? "pt"] ?? copyByLocale.pt;
+  const copy = copyByLocale[locale ?? "en"] ?? copyByLocale.en;
 
   return (
     <footer className="site-footer">
