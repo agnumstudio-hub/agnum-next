@@ -10,7 +10,7 @@ export default function ContactPage({
   const t = getT(locale);
 
   return (
-    <PublicLayout locale={locale}>
+    <PublicLayout locale={locale} pageTitle="Contact">
       <main className="content-wrapper contact-page">
         <section className="contact-frame">
           <div className="container">
