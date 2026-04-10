@@ -1,7 +1,7 @@
 import React from "react";
 import type { ReactNode } from "react";
 
-export type Locale = "pt" | "en" | "es";
+export type Locale = "en" | "pt" | "es";
 
 export type TranslationBundle = {
   nav: { studio: string; portfolio: string; contact: string };
@@ -285,117 +285,117 @@ const es: TranslationBundle = {
   nav: { studio: "THE STUDIO", portfolio: "PORTFOLIO", contact: "CONTACT" },
   footer: en.footer,
   home: {
-    heroTitle: "presence is designed.",
+    heroTitle: "La presencia se construye.",
     heroText:
-      "Un estudio creativo que da forma a la presencia para hospitalidad, experiencias y marcas high-end.",
-    positionLabel: "OUR POSITION",
+      "Un estudio creativo que construye presencia para hospitalidad, experiencias y marcas de alto nivel.",
+    positionLabel: "POSICIONAMIENTO",
     positionText:
-      "AGNUM traduce calidad en presencia, con claridad, contención e intención a largo plazo.\n\nConectamos la inteligencia estética con el rendimiento comercial, asegurando que una percepción refinada genere valor medible.",
+      "AAGNUM traduce la calidad en presencia, con claridad, criterio y visión a largo plazo.\n\nConectamos la inteligencia estética con la lógica del negocio, asegurando que una percepción cuidada genere valor real.",
     positionFooterLabel: "AGNUM CREATIVE STUDIO 26",
-    perspectiveTitle: "perspective",
-    perspectiveIntro: "Una selección curada de direcciones visuales y estratégicas.",
-    perspectiveUnderline: "explore our portfolio",
-    manifestoTitle: "Experience is felt before it is explained.",
+    perspectiveTitle: "PERSPECTIVA",
+    perspectiveIntro: "Una selección cuidada de direcciones visuales y estratégicas.",
+    perspectiveUnderline: "explorar el portfolio",
+    manifestoTitle: "La experiencia se siente antes de explicarse.",
     manifestoText:
-      "Creemos que la presencia no es accidental.\nSe construye a través de la observación, la intención y la contención.\nLa dirección estratégica es lo que permite que esa sensación se convierta en un activo duradero.",
+      "Creemos que la presencia no es accidental.\nSe construye a través de la observación, la intención y la contención.\nLa dirección estratégica es lo que permite que esa percepción se convierta en un valor duradero.",
     aboutTitle: "the studio",
     aboutText:
-      "Nuestro trabajo atraviesa dirección, estética y marketing estratégico.\n\nApoyamos a marcas de hospitalidad con un enfoque doble: construyendo una narrativa visual intransigente y asegurando que llegue al público correcto mediante una distribución de alto rendimiento.\n\nTraducimos la percepción en ingresos.",
+      "Nuestro trabajo se sitúa entre dirección, estética y estrategia.\n\nAcompañamos a marcas de hospitalidad a través de un enfoque dual: construir una narrativa visual sólida y asegurar que llegue al público adecuado, con coherencia y precisión.\n\nTraducimos la percepción en valor.",
     aboutUnderline: "the studio",
     contactText:
-      "Trabajamos con un número limitado de socios cada año.\n\nSi estás construyendo una experiencia, un lugar o una marca y buscas dirección con claridad e intención, nos gustaría comenzar una conversación.",
+      "Trabajamos con un número limitado de partners cada año.\n\nSi estás desarrollando una experiencia, un espacio o una marca y buscas una dirección con claridad e intención, estaremos encantados de iniciar una conversación.",
     contactUnderline: "contact the studio",
   },
   studio: {
     heroTitle: "the studio",
     intro: {
-      lead: "AGNUM nació de una observación simple.",
+      lead: "AGNUM nace de una observación sencilla.",
       strong:
-        "Las experiencias excepcionales muchas veces fallan\nal traducirse en una presencia igual de refinada.",
+        "Las experiencias excepcionales no siempre se\ntraducen en una presencia a su altura.",
       body:
-        "Nuestro trabajo existe para cerrar esa distancia. No solo para preservar la estética, sino para asegurar que percepción, posicionamiento y demanda sigan la misma dirección. Combinamos sensibilidad creativa con estructura estratégica, respetando la inteligencia de la marca y de su audiencia.",
+        "Nuestro trabajo consiste en cerrar esa distancia. No solo para preservar la estética, sino para alinear percepción, posicionamiento y demanda. Combinamos sensibilidad creativa y estructura estratégica, respetando la inteligencia de la marca y su audiencia, mientras sostenemos su rendimiento.",
     },
     editorial: {
-      observationLabel: "Observation",
+      observationLabel: "Observación",
       observationBody:
-        "Comenzamos con la observación. No solo del espacio, su luz y ritmo, sino también de su contexto de mercado. Al entender dónde se sitúa la propiedad dentro del panorama competitivo, identificamos oportunidades: dónde puede elevarse la percepción, dónde puede aclararse el posicionamiento y dónde puede dirigirse la demanda con mayor intención.",
-      intentionLabel: "intention",
+        "Partimos de la observación. Del espacio, la luz y el ritmo, pero también del contexto del mercado. Entender dónde se sitúa una propiedad permite identificar oportunidades: dónde elevar la percepción, dónde clarificar el posicionamiento y dónde dirigir la demanda con mayor precisión.\nAsí definimos la dirección antes de producir.",
+      intentionLabel: "Intención",
       intentionBody:
-        "En el segmento high-end, la casualidad es un riesgo. Cada decisión es deliberada. Desde el encuadre de una fotografía hasta la arquitectura de una estrategia de distribución de pago, dirección creativa y lógica comercial avanzan juntas. El storytelling visual no está separado del desempeño del negocio. Es el mecanismo que lo sostiene.",
-      restraintLabel: "restraint",
+        "En el segmento de alto nivel, el azar es un riesgo. Cada decisión es consciente. Desde la construcción visual hasta la estructura de distribución, creatividad y lógica de negocio avanzan juntas. La narrativa visual no está separada del rendimiento. Lo sostiene.\nCada punto de contacto guía la percepción hacia la confianza, y la confianza hacia la reserva directa.",
+      restraintLabel: "Contención",
       restraintBody:
-        "Las marcas más ruidosas rara vez son las más valiosas. En hospitalidad high-end, la claridad crea autoridad. Al eliminar ruido visual y estratégico, dejamos que el carácter real de la propiedad emerja. Esta contención fortalece el valor percibido, respalda el posicionamiento premium y atrae a una audiencia más calificada.",
-      continuityLabel: "continuity",
+        "Las marcas más visibles no siempre son las más valiosas. En hospitalidad de alto nivel, la claridad construye autoridad. Al eliminar lo innecesario, permitimos que lo esencial aparezca. Esta contención refuerza el valor percibido, sostiene el posicionamiento premium y atrae al público adecuado.\nEl resultado es una presencia capaz de sostener precios más altos y una demanda más sólida.",
+      continuityLabel: "Continuidad",
       continuityBody:
-        "La presencia no es una campaña. Se construye con el tiempo. Diseñamos continuidad en cada capa del viaje digital, desde el primer momento del descubrimiento hasta la reserva final. Al alinear contenido de alta fidelidad, estrategia de distribución y arquitectura de plataforma, creamos un ecosistema.",
+        "La presencia no es una campaña. Se construye con el tiempo. Diseñamos continuidad en todo el recorrido digital. Al alinear contenido, distribución y estructura, creamos un sistema donde la percepción se mantiene coherente y la demanda se vuelve sostenible.\nAsí, la atención se transforma en valor.",
     },
     editorialBreakText:
-      "Nuestro trabajo se despliega en tres dimensiones complementarias.\n\nPercepción.\nNarrativa.\nPerformance.\n\nCada una reforzando a la otra.",
+      "Nuestro trabajo se estructura en tres dimensiones.\n\nPercepción.\nNarrativa.\nPerformance.\n\nCada una refuerza a la otra.",
     services: [
       {
-        title: "Perception Strategy\n& Brand Premium",
-        subtitle: "The foundation of value.",
+        title: "Estrategia de Percepción\n& Brand Premium",
+        subtitle: "La base del valor.",
         description:
-          "Antes de producir imágenes o lanzar campañas, definimos la autoridad de posicionamiento de la propiedad. Nuestro foco es fortalecer Brand Premium y apoyar el poder de fijación de precios.",
+          "Antes de producir contenido visual o activar canales, definimos la autoridad de posicionamiento de la propiedad. Nuestro objetivo es reforzar el Brand Premium y sostener la capacidad de precio dentro del entorno competitivo.\n\nA través de un posicionamiento estratégico y una coherencia visual, la propiedad deja de ser una opción más y pasa a ser una referencia dentro de su destino.",
         bullets: [
-          "Positioning and Market Context",
-          "brand identity and visual trust",
-          "destination authority",
+          "Posicionamiento & Contexto de Mercado",
+          "Identidad de Marca & Confianza Visual",
+          "Autoridad de Destino",
         ],
       },
       {
-        title: "Narrative Intelligence\n& Aspirational Storytelling",
-        subtitle: "The architecture of desire.",
+        title: "Inteligencia Narrativa\n& Construcción del Deseo",
+        subtitle: "La arquitectura del deseo.",
         description:
-          "La hospitalidad high-end se vive primero a través de la percepción. Nuestras producciones visuales están diseñadas para traducir atmósfera en deseo, guiando al huésped de la curiosidad a la intención.",
+          "La hospitalidad de alto nivel se experimenta primero a través de la percepción. Nuestras producciones visuales traducen la atmósfera en deseo, guiando al huésped desde la curiosidad hasta la intención.\n\nA través de dirección editorial y una curaduría continua, la presencia digital se convierte en una narrativa viva que construye confianza con el tiempo.",
         bullets: [
-          "editorial photography and motion",
-          "social narrative and digital curation",
-          "sequential storytelling",
+          "Fotografía Editorial & Motion",
+          "Narrativa Social & Curaduría Digital",
+          "Narrativa Secuencial",
         ],
       },
       {
-        title: "Performance Architecture\n& Strategic Distribution",
-        subtitle: "Where perception becomes revenue.",
+        title: "Arquitectura de Performance\n& Distribución Estratégica",
+        subtitle: "Donde la percepción se convierte en ingresos.",
         description:
-          "Una vez alineadas la percepción y la narrativa, estructuramos los canales que convierten interés en reservas de manera eficiente a través de entornos de alto rendimiento.",
+          "Una vez alineadas la percepción y la narrativa, estructuramos los canales que transforman el interés en reservas.\n\nNuestro rol es asegurar que la demanda generada por la presencia sea capturada de forma eficiente, a través de distribución precisa y entornos de reserva optimizados.",
         bullets: [
-          "metasearch and paid distribution",
-          "direct booking ecosystem",
-          "conversion and revenue optimization",
+          "Metasearch & Distribución Paid",
+          "Ecosistema de Reserva Directa",
+          "Conversión & Optimización de Ingresos",
         ],
       },
     ],
     contactText:
-      "Trabajamos con un número limitado de socios cada año.\n\nSi estás construyendo una experiencia, un lugar o una marca y buscas dirección con claridad e intención, nos gustaría comenzar una conversación.",
+      "Trabajamos con un número limitado de partners cada año.\n\nSi estás desarrollando una experiencia, un espacio o una marca y buscas una dirección con claridad e intención, estaremos encantados de iniciar una conversación.",
     contactUnderline: "contact the studio",
   },
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "Una visión curada sobre presencia, experiencia y dirección visual.\nTodo el material presentado aquí fue concebido y dirigido por el Estudio.",
+      "La perspectiva es una elección. Nuestro portfolio es un estudio sobre cómo la intención construye el deseo.\nA continuación, una selección de proyectos guiados por el ritmo, la luz y la alineación estratégica para hospitalidad y marcas de alto nivel.\n\nPriorizamos la privacidad y la exclusividad de nuestros partners;\nPor ello, nuestros proyectos se presentan como estudios de percepción y no como simples registros de servicio.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
     title: "CONTACT\nTHE STUDIO",
     description:
-      "Trabajamos con un número limitado de socios cada año.\nLas consultas cuidadosas y las colaboraciones a largo plazo forman parte de nuestra práctica.\n\nSi estás construyendo una experiencia, un lugar o una marca y buscas dirección con claridad e intención, nos encantaría saber de ti.",
+      "Trabajamos con un número limitado de partners cada año.\nLas iniciativas bien planificadas y las colaboraciones a largo plazo son parte fundamental de nuestra práctica.\n\nSi estás desarrollando una experiencia, un espacio o una marca y buscas una dirección con claridad e intención, estaremos encantados de iniciar una conversación.",
     form: {
-      name: "NAME",
-      company: "COMPANY",
+      name: "NOMBRE",
+      company: "EMPRESA",
       email: "E-MAIL",
-      message: "YOUR MESSAGE",
-      send: "SEND",
+      message: "TU MENSAJE",
+      send: "ENVIAR",
       sent: "MESSAGE SENT",
     },
   },
 };
 
-export const translations: Record<Locale, TranslationBundle> = { pt, en, es };
+export const translations: Record<Locale, TranslationBundle> = { en, pt, es };
 
 export function getT(locale?: string): TranslationBundle {
-  const l = (locale as Locale) ?? "pt";
-  return translations[l] ?? translations.pt;
+  const l = (locale as Locale) ?? "en";
+  return translations[l] ?? translations.en;
 }
 
 export function renderMultiline(text: string): ReactNode[] {
