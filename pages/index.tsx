@@ -121,17 +121,19 @@ export default function HomePage({
                   key={img.src}
                   src={`/images/${img.src}`}
                   alt={img.alt ?? "Boutique Hotel Design"}
+                  // Reveal sincronizado
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   
-                  // --- O HOVER RÁPIDO E SUTIL QUE VOCÊ QUERIA ---
+                  // Hover Ultra Sutil e Elegante
                   whileHover={{ 
-                    scale: 1.03, 
-                    transition: { duration: 0.2, ease: "easeInOut" } 
+                    scale: 1.02, // Aumento de apenas 2%, bem discreto
+                    transition: { duration: 0.4, ease: "easeOut" } 
                   }}
-                  style={{ cursor: 'pointer' }}
+                  // Cursor padrão (seta), sem dar a ideia de link clicável
+                  style={{ cursor: 'default' }} 
                 />
               ))}
             </div>
