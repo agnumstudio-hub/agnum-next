@@ -12,7 +12,7 @@
 }
 
 .hero-title {
-  width: 175px;
+  width: 180px;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
 }
 
 .hero-text {
-  width: 175px;
+  width: 180px;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.6px;
@@ -190,7 +190,7 @@
 }
 
 .manifesto-text h2 {
-  font-size: 30px;
+  font-size: 34px;
   text-transform: uppercase;
   line-height: 42px;
   margin-bottom: 24px;
@@ -204,7 +204,7 @@
 }
 
 .manifesto-text p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26.4px;
 }
 
@@ -340,13 +340,13 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 110px 0 72px;
+    padding: 110px 0 90px;
     overflow-x: clip;
   }
 
   .hero-section-inner {
     align-items: center;
-    gap: 36px;
+    gap: 46px;
     min-width: 0;
   }
 
@@ -495,7 +495,7 @@
     left: auto;
     transform: none;
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     text-align: right;
   }
 
