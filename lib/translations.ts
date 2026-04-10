@@ -1,7 +1,7 @@
 import React from "react";
 import type { ReactNode } from "react";
 
-export type Locale = "en"| "fr" | "it" | "dt" | "pt" | "es";
+export type Locale = "en"| "fr" | "it" | "de" | "pt" | "es";
 
 export type TranslationBundle = {
   nav: { studio: string; portfolio: string; contact: string };
@@ -721,7 +721,7 @@ const es: TranslationBundle = {
   },
 };
 
-export const translations: Record<Locale, TranslationBundle> = { en, fr, it, dt, pt, es };
+export const translations: Record<Locale, TranslationBundle> = { en, fr, it, de, pt, es };
 
 export function getT(locale?: string): TranslationBundle {
   const l = (locale as Locale) ?? "en";
