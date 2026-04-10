@@ -41,7 +41,7 @@ export type TranslationBundle = {
       title: string;
       subtitle: string;
       description: string;
-      bullets: string[];
+      bullets: Array<{ label: string; answer: string;
     }>;
     contactText: string;
     contactUnderline: string;
