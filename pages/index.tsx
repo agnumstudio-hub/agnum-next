@@ -23,6 +23,8 @@ function HeroTitle({ title }: { title: string }) {
   const secondLine = words.slice(2).join(" ");
 
   return (
+    <PublicLayout locale={locale}>
+   <main>
     <>
       <span className="hero-title-desktop">{title}</span>
       <span className="hero-title-mobile" aria-hidden="true">
