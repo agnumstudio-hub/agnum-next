@@ -4,6 +4,7 @@ import { useState } from "react";
 import PublicLayout from "../components/PublicLayout";
 import { getGalleriesByKeys } from "../lib/gallery";
 import { getT, renderMultiline } from "../lib/translations";
+import { motion } from "motion/react";
 
 type ImageRow = { src: string; alt: string | null };
 
@@ -61,36 +62,35 @@ export default function StudioPage({
         </section>
 
         <section className="container editorial-section">
-          <div className="studio-divider-line" />
+  <div className="studio-divider-line" />
 
-          <div className="grid-row">
-            <div className="label-col">{t.studio.editorial.observationLabel}</div>
-            <div className="content-col">
-              {t.studio.editorial.observationBody}
-            </div>
-          </div>
-
-          <div className="grid-row">
-            <div className="label-col">{t.studio.editorial.intentionLabel}</div>
-            <div className="content-col">
-              {t.studio.editorial.intentionBody}
-            </div>
-          </div>
-
-          <div className="grid-row">
-            <div className="label-col">{t.studio.editorial.restraintLabel}</div>
-            <div className="content-col">
-              {t.studio.editorial.restraintBody}
-            </div>
-          </div>
-
-          <div className="grid-row" style={{ marginBottom: 0 }}>
-            <div className="label-col">{t.studio.editorial.continuityLabel}</div>
-            <div className="content-col">
-              {t.studio.editorial.continuityBody}
-            </div>
-          </div>
-        </section>
+  {[
+    { label: t.studio.editorial.observationLabel, body: t.studio.editorial.observationBody },
+    { label: t.studio.editorial.intentionLabel, body: t.studio.editorial.intentionBody },
+    { label: t.studio.editorial.restraintLabel, body: t.studio.editorial.restraintBody },
+    { label: t.studio.editorial.continuityLabel, body: t.studio.editorial.continuityBody },
+  ].map((item, index) => (
+    <motion.div
+      key={index}
+      className="grid-row"
+      style={{ marginBottom: index === 3 ? 0 : undefined }}
+      // Animação de Scroll (Reveal)
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, delay: index * 0.1 }}
+      // Animação de Hover Suave
+      whileHover={{ x: 10, transition: { duration: 0.3 } }}
+    >
+      <div className="label-col" style={{ transition: "color 0.3s" }}>
+        {item.label}
+      </div>
+      <div className="content-col">
+        {item.body}
+      </div>
+    </motion.div>
+  ))}
+</section>
 
         <section className="image-break">
           <img
