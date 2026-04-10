@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 export type Locale = "en" | "fr" | "it" | "de" | "pt" | "es";
 
 export type TranslationBundle = {
+  metadata: { title: string; description: string; keywords: string };
   nav: { studio: string; portfolio: string; contact: string };
   footer: { socials: { instagram: string; pinterest: string; x: string; linkedin: string } };
   home: {
