@@ -32,8 +32,8 @@ export default function PortfolioPage({
   const frame4Quad = byKey(galleries, "portfolio.frame4.quad");
 
   return (
-   <PublicLayout locale={locale} pageTitle="Contact">
-      <main className="content-wrapper contact-page">
+   <PublicLayout locale={locale} pageTitle="Portfolio">
+      <main className="content-wrapper">
         <section className="portfolio-intro">
           <div className="container">
             <h1>{t.portfolio.title}</h1>
