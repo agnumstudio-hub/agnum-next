@@ -74,11 +74,6 @@ export default function StudioPage({
       key={index}
       className="grid-row"
       style={{ marginBottom: index === 3 ? 0 : undefined }}
-      // Animação de Scroll (Reveal)
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.8, delay: index * 0.1 }}
       // Animação de Hover Suave
       whileHover={{ x: 10, transition: { duration: 0.3 } }}
     >
