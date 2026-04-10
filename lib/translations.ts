@@ -186,7 +186,7 @@ const en: TranslationBundle = {
   portfolio: {
     title: "PORTFOLIO",
     description:
-      "A curated view on presence, experience and visual direction.\nAll imagery presented here is conceived and directed by the Studio.",
+      "Perspective is a choice. Our portfolio is a study of how intention shapes desire.\nBelow is a selection of work focused on rhythm, light, and strategic alignment for hospitality and high-end brands.\n\nWe prioritize the privacy and exclusivity of our partners;\nTherefore, our cases are presented as studies in perception rather than mere records of service.",
     cta: "CONTACT THE STUDIO",
   },
   contact: {
