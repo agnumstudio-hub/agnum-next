@@ -116,38 +116,36 @@ export default function StudioPage({
                 <div className="service-desc-col">
                   <p>{s.description}</p>
 
-                  {s.bullets.map((b: string, i: number) => {
-                    const answerId = `studio-answer-${idx}-${i}`;
-                    const isOpen = openBulletId === answerId;
+                  {s.bullets.map((b: { label: string; answer: string }, i: number) => {
+                  const answerId = `studio-answer-${idx}-${i}`;
+                  const isOpen = openBulletId === answerId;
 
-                    return (
-                      <div className="service-accordion-item" key={i}>
-                        <button
-                          type="button"
-                          className={`service-list-item service-bullet ${isOpen ? "open" : ""
-                            }`}
-                          onClick={() =>
-                            setOpenBulletId(isOpen ? null : answerId)
-                          }
-                          aria-expanded={isOpen}
-                          aria-controls={answerId}
-                        >
-                          <span>{b}</span>
-                          <span className="plus" aria-hidden="true">
-                            +
-                          </span>
-                        </button>
+                  return (
+                  <div className="service-accordion-item" key={i}>
+                  <button
+                  type="button"
+                  className={`service-list-item service-bullet ${isOpen ? "open" : ""}`}
+                  onClick={() => setOpenBulletId(isOpen ? null : answerId)}
+                  aria-expanded={isOpen}
+                  aria-controls={answerId}
+                  >
+                 {/* Aqui usamos o b.label (o título do item) */}
+                 <span>{b.label}</span>
+                 <span className="plus" aria-hidden="true">
+                 +
+                 </span>
+                 </button>
 
-                        <div
-                          id={answerId}
-                          className={`service-answer ${isOpen ? "open" : ""}`}
-                          role="region"
-                          aria-label={`${b} answer`}
-                        >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Suspendisse potenti. Integer nec odio. Praesent libero.
-                        </div>
-                      </div>
+                 <div
+                id={answerId}
+                className={`service-answer ${isOpen ? "open" : ""}`}
+                role="region"
+                aria-label={`${b.label} answer`}
+                 >
+                {/* Aqui removemos o Lorem Ipsum e colocamos o b.answer */}
+                {renderMultiline(b.answer)}
+                </div>
+                </div>
                     );
                   })}
                 </div>
