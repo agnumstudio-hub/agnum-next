@@ -106,6 +106,7 @@ export default function HomePage({
         {/* PERSPECTIVE / PORTFOLIO PREVIEW */}
         <section className="perspective-section">
           <div className="container perspective-section-inner">
+            
             {/* Reveal no Título e Intro */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -117,38 +118,18 @@ export default function HomePage({
               <p style={{ fontSize: 18, marginTop: 36 }}>{t.home.perspectiveIntro}</p>
             </motion.div>
 
-            {/* Reveal na Grid de Imagens com Stagger (efeito cascata) */}
+            {/* Grid de Imagens com Reveal Sincronizado + Hover de Zoom */}
             <div className="p-grid">
-              {perspective.map((img, index) => (
+              {perspective.map((img) => (
                 <motion.img
                   key={img.src}
                   src={`/images/${img.src}`}
                   alt={img.alt ?? "Boutique Hotel Design"}
+                  // --- Reveal Animation (Entrada ao rolar a página) ---
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  transition={{ 
-                    duration: 0.7, 
-                    delay: index * 0.15, // Cada imagem aparece um pouco depois da outra
-                    ease: "easeOut" 
-                  }}
-                />
-              ))}
-            </div>
-
-            {/* Reveal no Link de Portfolio */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.5 }}
-            >
-              <Link href="/portfolio" locale={locale} className="underline">
-                {t.home.perspectiveUnderline}
-              </Link>
-            </motion.div>
-          </div>
-        </section>
+                  transition={{
         
         {/* MANIFESTO SECTION */}
         <section
