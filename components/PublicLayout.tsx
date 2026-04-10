@@ -43,10 +43,23 @@ export default function PublicLayout({
         <meta name="twitter:title" content={t.metadata.ogTitle} />
         <meta name="twitter:description" content={t.metadata.description} />
 
-        {/* Favicon (Otimizado para não falhar) */}
+      {/* Favicon - Adicionei uma linha para garantir compatibilidade com o Google */}
         <link rel="icon" type="image/svg+xml" href="/images/Logo-AGNUM.svg" />
-        <link rel="shortcut icon" href="/images/Logo-AGNUM.svg" />
         <link rel="apple-touch-icon" href="/images/Logo-AGNUM.svg" />
+{/* O Google as vezes ignora SVG puro se não houver um fallback, mas manteremos o SVG que você já tem */}
+
+{/* Script para a Logo aparecer no Google (Schema.org) */}
+        <script
+         type="application/ld+json"
+         dangerouslySetInnerHTML={{
+         __html: JSON.stringify({
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "url": "https://www.agnumstudio.com",
+         "logo": "https://www.agnumstudio.com/images/Logo-AGNUM.svg"
+          }),
+       }}
+      />
       </Head>
 
       <SiteHeader />
