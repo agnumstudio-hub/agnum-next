@@ -885,6 +885,52 @@ const es: TranslationBundle = {
 
 export const translations: Record<Locale, TranslationBundle> = { en, fr, it, de, pt, es };
 
+export const translations = {
+  pt: {
+    metadata: {
+      title: "AGNUM | Branding, Estética e Marketing para Hotelaria de Luxo",
+      description: "Estúdio criativo especializado em branding e marketing de experiência para hotéis boutique e marcas de hospitalidade premium. Elevamos a estética da sua marca.",
+      keywords: "branding hotelaria de luxo, marketing hoteleiro, design de experiência, hotel boutique, branding premium, agência criativa luxo"
+    },
+    // ... restante das chaves
+  },
+  en: {
+    metadata: {
+      title: "AGNUM | Branding, Aesthetics & Marketing for Luxury Hospitality",
+      description: "Creative studio specialized in branding and experience marketing for boutique hotels and premium hospitality brands. Elevating your brand aesthetics.",
+      keywords: "luxury hospitality branding, hotel marketing agency, boutique hotel design, guest experience marketing, high-end branding studio"
+    },
+  },
+  fr: {
+    metadata: {
+      title: "AGNUM | Branding, Esthétique et Marketing pour l'Hôtellerie de Luxe",
+      description: "Studio créatif spécialisé dans le branding et le marketing d'expérience pour les hôtels de charme et les marques d'hospitalité de luxe.",
+      keywords: "branding hôtellerie de luxe, marketing hôtelier, design d'expérience, hôtel boutique, esthétique de marque"
+    },
+  },
+  it: {
+    metadata: {
+      title: "AGNUM | Branding, Estetica e Marketing per l'Ospitalità di Lusso",
+      description: "Studio creativo specializzato in branding e marketing dell'esperienza per boutique hotel e marchi di ospitalità premium.",
+      keywords: "branding ospitalità di lusso, marketing alberghiero, design dell'esperienza, boutique hotel, estetica del brand"
+    },
+  },
+  de: {
+    metadata: {
+      title: "AGNUM | Branding, Ästhetik & Marketing für Luxushotellerie",
+      description: "Kreativstudio spezialisiert auf Branding und Erlebnismarketing für Boutique-Hotels und Premium-Hospitality-Marken.",
+      keywords: "Luxushotellerie Branding, Hotelmarketing, Erlebnisdesign, Boutique-Hotel, Markenästhetik"
+    },
+  },
+  es: {
+    metadata: {
+      title: "AGNUM | Branding, Estética y Marketing para Hotelería de Lujo",
+      description: "Estudio creativo especializado en branding y marketing de experiencia para hoteles boutique y marcas de hospitalidade premium.",
+      keywords: "branding hotelería de lujo, marketing hotelero, diseño de experiencia, hotel boutique, estética de marca"
+    },
+  }
+};
+
 export function getT(locale?: string): TranslationBundle {
   const l = (locale as Locale) ?? "en";
   return translations[l] ?? translations.en;
