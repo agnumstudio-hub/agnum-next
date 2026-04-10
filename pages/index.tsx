@@ -104,6 +104,7 @@ export default function HomePage({
         {/* PERSPECTIVE / PORTFOLIO PREVIEW */}
         <section className="perspective-section">
           <div className="container perspective-section-inner">
+            
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +125,12 @@ export default function HomePage({
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
+                  
+                  // --- O HOVER RÁPIDO E SUTIL QUE VOCÊ QUERIA ---
+                  whileHover={{ 
+                    scale: 1.03, 
+                    transition: { duration: 0.2, ease: "easeInOut" } 
+                  }}
                   style={{ cursor: 'pointer' }}
                 />
               ))}
