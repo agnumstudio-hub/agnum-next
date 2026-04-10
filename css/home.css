@@ -12,7 +12,7 @@
 }
 
 .hero-title {
-  width: 180px;
+  width: 190px;
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
 }
 
 .hero-text {
-  width: 180px;
+  width: 190px;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.6px;
@@ -192,7 +192,7 @@
 .manifesto-text h2 {
   font-size: 34px;
   text-transform: uppercase;
-  line-height: 42px;
+  line-height: 45px;
   margin-bottom: 24px;
   font-weight: 500;
   /* semibold */
@@ -205,7 +205,7 @@
 
 .manifesto-text p {
   font-size: 18px;
-  line-height: 26.4px;
+  line-height: 23px;
 }
 
 .about-section {
@@ -340,13 +340,13 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 110px 0 90px;
+    padding: 115px 0 95px;
     overflow-x: clip;
   }
 
   .hero-section-inner {
     align-items: center;
-    gap: 46px;
+    gap: 50px;
     min-width: 0;
   }
 
@@ -496,7 +496,7 @@
     transform: none;
     width: 100%;
     max-width: 300px;
-    text-align: flex end;
+    text-align: right;
   }
 
   .manifesto-section .manifesto-text h2 {
@@ -506,6 +506,6 @@
 
   .manifesto-section .manifesto-text p {
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 1;
   }
 }
